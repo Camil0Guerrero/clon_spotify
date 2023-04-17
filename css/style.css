@@ -1,0 +1,275 @@
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+	user-select: none;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: CircularSp, Comic, Arial;
+}
+
+/* ********** Custom Properties ********** */
+:root {
+	--primary-color: #fff;
+	--secondary-color: #1db954;
+	--primary-bg-color: #000;
+}
+/* ********** Reset ********** */
+/* ********** Components ********** */
+
+/*** Header ***/
+.header {
+	background-color: rgb(104, 16, 8);
+	color: white;
+	position: sticky;
+	width: 80vw;
+
+	position: absolute;
+	right: 0;
+	height: 4rem;
+	padding: 1rem 32px;
+}
+
+.content-header {
+	display: grid;
+	grid-template-columns: 15% 60% 30%;
+}
+
+/*** Buttons ***/
+/* Previous */
+.content-header .btns-previous-next {
+	width: 6rem;
+	height: 2rem;
+}
+
+.content-header .btns-previous-next .previous {
+	background-color: #000;
+	border-radius: 50%;
+	border: none;
+
+	height: 32px;
+	width: 32px;
+
+	opacity: 0.6;
+	margin-right: 16px;
+}
+
+.content-header .btns-previous-next .previous svg {
+	fill: #fff;
+	width: 16px;
+	height: 16px;
+}
+
+/* Next */
+.content-header .btns-previous-next .next {
+	background-color: #000;
+	border-radius: 50%;
+	border: none;
+	width: 32px;
+	height: 32px;
+	opacity: 0.6;
+}
+
+.content-header .btns-previous-next .next svg {
+	fill: #fff;
+	width: 16px;
+	height: 16px;
+}
+
+/*** Core Content ***/
+
+.content-header .core-content {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+/* button */
+.content-header .core-content .play {
+	background-color: var(--secondary-color);
+	border-radius: 50%;
+	border: none;
+	margin-top: -0.5rem;
+	height: 3rem;
+	width: 3rem;
+}
+
+.content-header .core-content .play:hover {
+	transform: scale(1.04);
+}
+
+.content-header .core-content .play svg {
+	width: 24px;
+	height: 24px;
+}
+
+.content-header .core-content .play .pause {
+	display: none;
+}
+
+/* Name user */
+.content-header .core-content span {
+	font-size: 1.5rem;
+	font-weight: bold;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Information user */
+.content-header .information-user {
+	width: 80%;
+	height: 2rem;
+}
+
+.content-header .information-user button {
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 23px;
+	border: 0;
+	height: 2rem;
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+
+	padding: 2px;
+	position: relative;
+}
+
+.content-header .information-user button:hover {
+	background-color: #282828;
+}
+
+.content-header .information-user img {
+	position: absolute;
+	left: 5%;
+	top: 5%;
+	border-radius: 50%;
+	width: 28px;
+	height: 28px;
+}
+
+.content-header .information-user span {
+	position: absolute;
+	left: 20%;
+	display: inline-block;
+	font-weight: bold;
+	color: #fff;
+	white-space: nowrap;
+	margin-left: 10px;
+	max-width: 110px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.content-header .information-user svg {
+	position: absolute;
+	right: 3%;
+	fill: #fff;
+	display: block;
+}
+
+/*** Menu ***/
+
+.menu {
+	background-color: var(--primary-bg-color);
+	display: flex;
+	flex-direction: column;
+	width: 20vw;
+	padding-top: 24px;
+}
+
+.menu h1 {
+	margin: 0;
+	padding: 0;
+}
+
+.menu h1 a {
+	margin-bottom: 24px;
+	flex: 1;
+	transition: transform 300ms ease-in-out;
+}
+
+.menu h1 a:hover {
+	background-color: #000;
+	cursor: pointer;
+}
+
+.menu h1 a:hover > svg {
+	transform: scale(1.1);
+}
+
+.menu a svg {
+	height: 40px;
+}
+
+.menu a {
+	color: var(--primary-color);
+	display: flex;
+	text-decoration: none;
+	gap: 0.5rem;
+	align-items: center;
+	padding: 0 16px;
+	transition: color 0.3s ease-in-out;
+}
+
+.menu .pages a svg {
+	width: 20px;
+	height: 20px;
+}
+
+.menu a:hover {
+	background-color: var(--secondary-color);
+}
+
+.menu hr {
+	width: 70%;
+	border: none;
+	background-image: radial-gradient(var(--secondary-color) 68%, #fff);
+	height: 1px;
+	min-height: 1px;
+	border-radius: 1px;
+}
+
+/* ********** Utilities ********** */
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ********** Site Styles ********** */
+.icon-create-playlist {
+	background-color: #fff;
+	border-radius: 2px;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-create-playlist svg {
+	fill: #000;
+}
+
+.icon-liked-songs {
+	background-image: linear-gradient(135deg, #450af5, #c4efd9);
+	width: 20px;
+	height: 20px;
+}
+
+.playlists {
+	padding: 8px;
+}
+
+.playlists a {
+	padding: 0.5rem;
+	cursor: default;
+}
