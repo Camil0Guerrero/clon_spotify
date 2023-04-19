@@ -7,28 +7,436 @@
 		<title>Clon Spotify</title>
 	</head>
 	<body>
+		<header class="header">
+			<article class="content-header">
+				<section class="btn-previous-next">
+					<button class="previous">
+						<svg role="img" height="15" width="15" fill="currentColor" aria-hidden="true" viewBox="0 0 16 16">
+							<path
+								d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z"
+							></path>
+						</svg>
+					</button>
+
+					<button class="next">
+						<svg role="img" height="15" width="15" fill="currentColor" aria-hidden="true" viewBox="0 0 16 16">
+							<path
+								d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"
+							></path>
+						</svg>
+					</button>
+				</section>
+
+				<section class="core-content">
+					<button class="play center">
+						<svg
+							role="img"
+							height="15"
+							width="15"
+							fill="currentColor"
+							aria-hidden="true"
+							viewBox="0 0 24 24"
+							class="pause"
+						>
+							<path
+								d="M5.7 3a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7H5.7zm10 0a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-2.6z"
+							></path>
+						</svg>
+						<svg
+							role="img"
+							height="15"
+							width="15"
+							fill="currentColor"
+							aria-hidden="true"
+							viewBox="0 0 24 24"
+							class="start"
+						>
+							<path
+								d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+							></path>
+						</svg>
+					</button>
+					<span>Name</span>
+				</section>
+
+				<section class="information-user">
+					<button type="button center">
+						<figure title="CAMILO GUERRERO">
+							<img
+								draggable="false"
+								loading="eager"
+								src="https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=339852356388564&amp;height=300&amp;width=300&amp;ext=1684330742&amp;hash=AeQS-hqGQwrxdxSIzfA"
+								alt="CAMILO GUERRERO"
+							/>
+						</figure>
+						<span dir="auto">CAMILO GUERRERO</span>
+						<svg role="img" height="15" width="15" fill="currentColor" aria-hidden="true" viewBox="0 0 16 16">
+							<path d="m14 6-6 6-6-6h12z"></path>
+						</svg>
+					</button>
+				</section>
+			</article>
+		</header>
+
+		<nav class="menu">
+			<h1>
+				<a>
+					<svg viewBox="0 0 1134 340" class="fwTMCeAaUoWDj9WcQbgy">
+						<title>Spotify</title>
+						<path
+							fill="currentColor"
+							d="M8 171c0 92 76 168 168 168s168-76 168-168S268 4 176 4 8 79 8 171zm230 78c-39-24-89-30-147-17-14 2-16-18-4-20 64-15 118-8 162 19 11 7 0 24-11 18zm17-45c-45-28-114-36-167-20-17 5-23-21-7-25 61-18 136-9 188 23 14 9 0 31-14 22zM80 133c-17 6-28-23-9-30 59-18 159-15 221 22 17 9 1 37-17 27-54-32-144-35-195-19zm379 91c-17 0-33-6-47-20-1 0-1 1-1 1l-16 19c-1 1-1 2 0 3 18 16 40 24 64 24 34 0 55-19 55-47 0-24-15-37-50-46-29-7-34-12-34-22s10-16 23-16 25 5 39 15c0 0 1 1 2 1s1-1 1-1l14-20c1-1 1-1 0-2-16-13-35-20-56-20-31 0-53 19-53 46 0 29 20 38 52 46 28 6 32 12 32 22 0 11-10 17-25 17zm95-77v-13c0-1-1-2-2-2h-26c-1 0-2 1-2 2v147c0 1 1 2 2 2h26c1 0 2-1 2-2v-46c10 11 21 16 36 16 27 0 54-21 54-61s-27-60-54-60c-15 0-26 5-36 17zm30 78c-18 0-31-15-31-35s13-34 31-34 30 14 30 34-12 35-30 35zm68-34c0 34 27 60 62 60s62-27 62-61-26-60-61-60-63 27-63 61zm30-1c0-20 13-34 32-34s33 15 33 35-13 34-32 34-33-15-33-35zm140-58v-29c0-1 0-2-1-2h-26c-1 0-2 1-2 2v29h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v58c0 23 11 35 34 35 9 0 18-2 25-6 1 0 1-1 1-2v-21c0-1 0-2-1-2h-2c-5 3-11 4-16 4-8 0-12-4-12-12v-54h30c1 0 2-1 2-2v-22c0-1-1-2-2-2h-30zm129-3c0-11 4-15 13-15 5 0 10 0 15 2h1s1-1 1-2V93c0-1 0-2-1-2-5-2-12-3-22-3-24 0-36 14-36 39v5h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v89c0 1 1 2 2 2h26c1 0 1-1 1-2v-89h25l37 89c-4 9-8 11-14 11-5 0-10-1-15-4h-1l-1 1-9 19c0 1 0 3 1 3 9 5 17 7 27 7 19 0 30-9 39-33l45-116v-2c0-1-1-1-2-1h-27c-1 0-1 1-1 2l-28 78-30-78c0-1-1-2-2-2h-44v-3zm-83 3c-1 0-2 1-2 2v113c0 1 1 2 2 2h26c1 0 1-1 1-2V134c0-1 0-2-1-2h-26zm-6-33c0 10 9 19 19 19s18-9 18-19-8-18-18-18-19 8-19 18zm245 69c10 0 19-8 19-18s-9-18-19-18-18 8-18 18 8 18 18 18zm0-34c9 0 17 7 17 16s-8 16-17 16-16-7-16-16 7-16 16-16zm4 18c3-1 5-3 5-6 0-4-4-6-8-6h-8v19h4v-6h4l4 6h5zm-3-9c2 0 4 1 4 3s-2 3-4 3h-4v-6h4z"
+						></path>
+					</svg>
+				</a>
+			</h1>
+			<article class="pages">
+				<a href="">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="16"
+						height="16"
+						fill="currentColor"
+						class="bi bi-house-door-fill"
+						viewBox="0 0 16 16"
+					>
+						<path
+							d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"
+						/>
+					</svg>
+					<p>Home</p>
+				</a>
+				<a href="">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="16"
+						height="16"
+						fill="currentColor"
+						class="bi bi-search"
+						viewBox="0 0 16 16"
+					>
+						<path
+							d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+						/>
+					</svg>
+					<p>Search</p>
+				</a>
+				<a href="">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="16"
+						height="16"
+						fill="currentColor"
+						class="bi bi-collection-play-fill"
+						viewBox="0 0 16 16"
+					>
+						<path
+							d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm6.258-6.437a.5.5 0 0 1 .507.013l4 2.5a.5.5 0 0 1 0 .848l-4 2.5A.5.5 0 0 1 6 12V7a.5.5 0 0 1 .258-.437z"
+						/>
+					</svg>
+					<p>Your Library</p>
+				</a>
+			</article>
+
+			<article class="options">
+				<a href="">
+					<div class="icon-create-playlist center">
+						<svg
+							role="img"
+							height="15px"
+							width="15px"
+							fill="currentColor"
+							aria-hidden="true"
+							viewBox="0 0 16 16"
+							data-encore-id="icon"
+							class="Svg-sc-ytk21e-0 gQUQL"
+						>
+							<path
+								d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z"
+							></path>
+						</svg>
+					</div>
+
+					<p>Create Playlist</p>
+				</a>
+				<a href="">
+					<div class="icon-liked-songs center">
+						<svg
+							role="img"
+							height="15px"
+							width="15px"
+							fill="currentColor"
+							aria-hidden="true"
+							viewBox="0 0 16 16"
+							data-encore-id="icon"
+							class="Svg-sc-ytk21e-0 gQUQL"
+						>
+							<path
+								d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"
+							></path>
+						</svg>
+					</div>
+					<p>Liked Songs</p>
+				</a>
+			</article>
+			<hr />
+
+			<article class="playlists">
+				<a href="">Ejemplo Lista 1</a>
+				<a href="">Ejemplo Lista 2</a>
+				<a href="">Ejemplo Lista 3</a>
+				<a href="">Ejemplo Lista 4</a>
+				<a href="">Ejemplo Lista 5</a>
+				<a href="">Ejemplo Lista 6</a>
+				<a href="">Ejemplo Lista 7</a>
+				<a href="">Ejemplo Lista 8</a>
+			</article>
+		</nav>
+
 		<main>
-			<header class="header">
-				<article class="content-header">
-					<section class="btns-previous-next">
-						<button class="previous">
-							<svg role="img" height="15" width="15" fill="currentColor" aria-hidden="true" viewBox="0 0 16 16">
-								<path
-									d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z"
-								></path>
-							</svg>
-						</button>
+			<h2>Good afternoon</h2>
+			<article class="recently-heard">
+				<aside class="cards">
+					<div>
+						<img src="https://t.scdn.co/images/3099b3803ad9496896c43f22fe9be8c4.png" alt="Image of liked song" />
 
-						<button class="next">
-							<svg role="img" height="15" width="15" fill="currentColor" aria-hidden="true" viewBox="0 0 16 16">
-								<path
-									d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"
-								></path>
-							</svg>
-						</button>
-					</section>
+						<div class="content-card">
+							<p>Liked Songs</p>
+							<button class="play center">
+								<svg
+									role="img"
+									height="15"
+									width="15"
+									fill="currentColor"
+									aria-hidden="true"
+									viewBox="0 0 24 24"
+									class="pause"
+								>
+									<path
+										d="M5.7 3a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7H5.7zm10 0a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-2.6z"
+									></path>
+								</svg>
+								<svg
+									role="img"
+									height="15"
+									width="15"
+									fill="currentColor"
+									aria-hidden="true"
+									viewBox="0 0 24 24"
+									class="start"
+								>
+									<path
+										d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+									></path>
+								</svg>
+							</button>
+						</div>
+					</div>
 
-					<section class="core-content">
+					<div>
+						<img
+							src="https://mosaic.scdn.co/640/ab67616d00001e021b0d9e321e064ef34b722c6cab67616d00001e025d18cae5de27e488feb0f82aab67616d00001e02d0b8c555dc3c3fe62f8828daab67616d00001e02e1ee6c9e94318aaec307bd26"
+							alt="Image of recent playlist"
+						/>
+
+						<div class="content-card">
+							<p>$_$</p>
+							<button class="play center">
+								<svg
+									role="img"
+									height="15"
+									width="15"
+									fill="currentColor"
+									aria-hidden="true"
+									viewBox="0 0 24 24"
+									class="pause"
+								>
+									<path
+										d="M5.7 3a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7H5.7zm10 0a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-2.6z"
+									></path>
+								</svg>
+								<svg
+									role="img"
+									height="15"
+									width="15"
+									fill="currentColor"
+									aria-hidden="true"
+									viewBox="0 0 24 24"
+									class="start"
+								>
+									<path
+										d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+									></path>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					<div>
+						<img
+							src="https://daily-mix.scdn.co/covers/on_repeat/PZN_On_Repeat2_DEFAULT-en.jpg"
+							alt="Image of On repeat"
+						/>
+
+						<div class="content-card">
+							<p>On Repeat</p>
+							<button class="play center">
+								<svg
+									role="img"
+									height="15"
+									width="15"
+									fill="currentColor"
+									aria-hidden="true"
+									viewBox="0 0 24 24"
+									class="pause"
+								>
+									<path
+										d="M5.7 3a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7H5.7zm10 0a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-2.6z"
+									></path>
+								</svg>
+								<svg
+									role="img"
+									height="15"
+									width="15"
+									fill="currentColor"
+									aria-hidden="true"
+									viewBox="0 0 24 24"
+									class="start"
+								>
+									<path
+										d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+									></path>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					<div>
+						<img
+							src="https://mosaic.scdn.co/640/ab67616d00001e022f22f3c3cfa14d302d07d7fcab67616d00001e02500d9a8d94b6ae368c6b4488ab67616d00001e02b05fef733b56a924517cfbdeab67616d00001e02efe04174e6ad295807c6b6d1"
+							alt="Image of recent playlist"
+						/>
+
+						<div class="content-card">
+							<p>★_★</p>
+							<button class="play center">
+								<svg
+									role="img"
+									height="15"
+									width="15"
+									fill="currentColor"
+									aria-hidden="true"
+									viewBox="0 0 24 24"
+									class="pause"
+								>
+									<path
+										d="M5.7 3a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7H5.7zm10 0a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-2.6z"
+									></path>
+								</svg>
+								<svg
+									role="img"
+									height="15"
+									width="15"
+									fill="currentColor"
+									aria-hidden="true"
+									viewBox="0 0 24 24"
+									class="start"
+								>
+									<path
+										d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+									></path>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					<div>
+						<img
+							src="https://mosaic.scdn.co/640/ab67616d00001e025433ea60bbaab178eab5a848ab67616d00001e02651205fb9f381d686c619d2dab67616d00001e02d3d09f09ddea13dceee574b7ab67616d00001e02fc46c29e75fe87707a368672"
+							alt="Image of recent playlist"
+						/>
+
+						<div class="content-card">
+							<p>C-kan</p>
+							<button class="play center">
+								<svg
+									role="img"
+									height="15"
+									width="15"
+									fill="currentColor"
+									aria-hidden="true"
+									viewBox="0 0 24 24"
+									class="pause"
+								>
+									<path
+										d="M5.7 3a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7H5.7zm10 0a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-2.6z"
+									></path>
+								</svg>
+								<svg
+									role="img"
+									height="15"
+									width="15"
+									fill="currentColor"
+									aria-hidden="true"
+									viewBox="0 0 24 24"
+									class="start"
+								>
+									<path
+										d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+									></path>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					<div>
+						<img
+						src="https://mosaic.scdn.co/640/ab67616d00001e02438b13148562481279b945d0ab67616d00001e027177f4893003134bcefde0b6ab67616d00001e0287982734f163fc944dee586cab67616d00001e02d74ef0cc14180515b0f7aeb2"
+						alt="Image of recent playlist"" />
+
+						<div class="content-card">
+							<p>Liked Songs</p>
+							<button class="play center">
+								<svg
+									role="img"
+									height="15"
+									width="15"
+									fill="currentColor"
+									aria-hidden="true"
+									viewBox="0 0 24 24"
+									class="pause"
+								>
+									<path
+										d="M5.7 3a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7H5.7zm10 0a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-2.6z"
+									></path>
+								</svg>
+								<svg
+									role="img"
+									height="15"
+									width="15"
+									fill="currentColor"
+									aria-hidden="true"
+									viewBox="0 0 24 24"
+									class="start"
+								>
+									<path
+										d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+									></path>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</aside>
+			</article>
+
+			<h2>Made for Camilo Guerrero</h2>
+			<article class="recommendations">
+				<figure>
+					<div>
+						<img
+							src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb38ec7babbf8421ce4152739c/1/en/default"
+							alt="Mix recommended"
+						/>
 						<button class="play center">
 							<svg
 								role="img"
@@ -57,142 +465,128 @@
 								></path>
 							</svg>
 						</button>
-						<span>Name</span>
-					</section>
+					</div>
+					<legend>Daily Mix 1</legend>
+					<p>Calero LDN, Blake, SWIT EME and more</p>
+				</figure>
 
-					<section class="information-user">
-						<button type="button center">
-							<figure title="CAMILO GUERRERO">
-								<img
-									draggable="false"
-									loading="eager"
-									src="https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=339852356388564&amp;height=300&amp;width=300&amp;ext=1684330742&amp;hash=AeQS-hqGQwrxdxSIzfA"
-									alt="CAMILO GUERRERO"
-								/>
-							</figure>
-							<span dir="auto">CAMILO GUERRERO</span>
-							<svg role="img" height="15" width="15" fill="currentColor" aria-hidden="true" viewBox="0 0 16 16">
-								<path d="m14 6-6 6-6-6h12z"></path>
+				<figure>
+					<div>
+						<img
+							src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eba455ab3f45697d7a2fbff3b5/2/en/default"
+							alt="Mix recommended"
+						/>
+						<button class="play center">
+							<svg
+								role="img"
+								height="15"
+								width="15"
+								fill="currentColor"
+								aria-hidden="true"
+								viewBox="0 0 24 24"
+								class="pause"
+							>
+								<path
+									d="M5.7 3a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7H5.7zm10 0a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-2.6z"
+								></path>
+							</svg>
+							<svg
+								role="img"
+								height="15"
+								width="15"
+								fill="currentColor"
+								aria-hidden="true"
+								viewBox="0 0 24 24"
+								class="start"
+							>
+								<path
+									d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+								></path>
 							</svg>
 						</button>
-					</section>
-				</article>
-			</header>
+					</div>
+					<legend>Daily Mix 2</legend>
+					<p>Los Gigantes del Vallenato, Los diablitos, los Inquietos</p>
+				</figure>
 
-			<nav class="menu">
-				<h1>
-					<a>
-						<svg viewBox="0 0 1134 340" class="fwTMCeAaUoWDj9WcQbgy">
-							<title>Spotify</title>
-							<path
-								fill="currentColor"
-								d="M8 171c0 92 76 168 168 168s168-76 168-168S268 4 176 4 8 79 8 171zm230 78c-39-24-89-30-147-17-14 2-16-18-4-20 64-15 118-8 162 19 11 7 0 24-11 18zm17-45c-45-28-114-36-167-20-17 5-23-21-7-25 61-18 136-9 188 23 14 9 0 31-14 22zM80 133c-17 6-28-23-9-30 59-18 159-15 221 22 17 9 1 37-17 27-54-32-144-35-195-19zm379 91c-17 0-33-6-47-20-1 0-1 1-1 1l-16 19c-1 1-1 2 0 3 18 16 40 24 64 24 34 0 55-19 55-47 0-24-15-37-50-46-29-7-34-12-34-22s10-16 23-16 25 5 39 15c0 0 1 1 2 1s1-1 1-1l14-20c1-1 1-1 0-2-16-13-35-20-56-20-31 0-53 19-53 46 0 29 20 38 52 46 28 6 32 12 32 22 0 11-10 17-25 17zm95-77v-13c0-1-1-2-2-2h-26c-1 0-2 1-2 2v147c0 1 1 2 2 2h26c1 0 2-1 2-2v-46c10 11 21 16 36 16 27 0 54-21 54-61s-27-60-54-60c-15 0-26 5-36 17zm30 78c-18 0-31-15-31-35s13-34 31-34 30 14 30 34-12 35-30 35zm68-34c0 34 27 60 62 60s62-27 62-61-26-60-61-60-63 27-63 61zm30-1c0-20 13-34 32-34s33 15 33 35-13 34-32 34-33-15-33-35zm140-58v-29c0-1 0-2-1-2h-26c-1 0-2 1-2 2v29h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v58c0 23 11 35 34 35 9 0 18-2 25-6 1 0 1-1 1-2v-21c0-1 0-2-1-2h-2c-5 3-11 4-16 4-8 0-12-4-12-12v-54h30c1 0 2-1 2-2v-22c0-1-1-2-2-2h-30zm129-3c0-11 4-15 13-15 5 0 10 0 15 2h1s1-1 1-2V93c0-1 0-2-1-2-5-2-12-3-22-3-24 0-36 14-36 39v5h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v89c0 1 1 2 2 2h26c1 0 1-1 1-2v-89h25l37 89c-4 9-8 11-14 11-5 0-10-1-15-4h-1l-1 1-9 19c0 1 0 3 1 3 9 5 17 7 27 7 19 0 30-9 39-33l45-116v-2c0-1-1-1-2-1h-27c-1 0-1 1-1 2l-28 78-30-78c0-1-1-2-2-2h-44v-3zm-83 3c-1 0-2 1-2 2v113c0 1 1 2 2 2h26c1 0 1-1 1-2V134c0-1 0-2-1-2h-26zm-6-33c0 10 9 19 19 19s18-9 18-19-8-18-18-18-19 8-19 18zm245 69c10 0 19-8 19-18s-9-18-19-18-18 8-18 18 8 18 18 18zm0-34c9 0 17 7 17 16s-8 16-17 16-16-7-16-16 7-16 16-16zm4 18c3-1 5-3 5-6 0-4-4-6-8-6h-8v19h4v-6h4l4 6h5zm-3-9c2 0 4 1 4 3s-2 3-4 3h-4v-6h4z"
-							></path>
-						</svg>
-					</a>
-				</h1>
-				<article class="pages">
-					<a href="">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="16"
-							height="16"
-							fill="currentColor"
-							class="bi bi-house-door-fill"
-							viewBox="0 0 16 16"
-						>
-							<path
-								d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"
-							/>
-						</svg>
-						<p>Home</p>
-					</a>
-					<a href="">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="16"
-							height="16"
-							fill="currentColor"
-							class="bi bi-search"
-							viewBox="0 0 16 16"
-						>
-							<path
-								d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-							/>
-						</svg>
-						<p>Search</p>
-					</a>
-					<a href="">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="16"
-							height="16"
-							fill="currentColor"
-							class="bi bi-collection-play-fill"
-							viewBox="0 0 16 16"
-						>
-							<path
-								d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm6.258-6.437a.5.5 0 0 1 .507.013l4 2.5a.5.5 0 0 1 0 .848l-4 2.5A.5.5 0 0 1 6 12V7a.5.5 0 0 1 .258-.437z"
-							/>
-						</svg>
-						<p>Your Library</p>
-					</a>
-				</article>
-
-				<article class="options">
-					<a href="">
-						<div class="icon-create-playlist center">
+				<figure>
+					<div>
+						<img
+							src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb2ef15db088ca816689981c2a/3/en/default"
+							alt="Mix recommended"
+						/>
+						<button class="play center">
 							<svg
 								role="img"
-								height="15px"
-								width="15px"
+								height="15"
+								width="15"
 								fill="currentColor"
 								aria-hidden="true"
-								viewBox="0 0 16 16"
-								data-encore-id="icon"
-								class="Svg-sc-ytk21e-0 gQUQL"
+								viewBox="0 0 24 24"
+								class="pause"
 							>
 								<path
-									d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z"
+									d="M5.7 3a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7H5.7zm10 0a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-2.6z"
 								></path>
 							</svg>
-						</div>
-
-						<p>Create Playlist</p>
-					</a>
-					<a href="">
-						<div class="icon-liked-songs center">
 							<svg
 								role="img"
-								height="15px"
-								width="15px"
+								height="15"
+								width="15"
 								fill="currentColor"
 								aria-hidden="true"
-								viewBox="0 0 16 16"
-								data-encore-id="icon"
-								class="Svg-sc-ytk21e-0 gQUQL"
+								viewBox="0 0 24 24"
+								class="start"
 							>
 								<path
-									d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"
+									d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
 								></path>
 							</svg>
-						</div>
-						<p>Liked Songs</p>
-					</a>
-				</article>
-				<hr />
+						</button>
+					</div>
+					<legend>Daily Mix 3</legend>
+					<p>Alzate, Giovanny Ayala, Luisito Muñoz and more</p>
+				</figure>
 
-				<article class="playlists">
-					<a href="">Ejemplo Lista 1</a>
-					<a href="">Ejemplo Lista 2</a>
-					<a href="">Ejemplo Lista 3</a>
-					<a href="">Ejemplo Lista 4</a>
-					<a href="">Ejemplo Lista 5</a>
-					<a href="">Ejemplo Lista 6</a>
-					<a href="">Ejemplo Lista 7</a>
-					<a href="">Ejemplo Lista 8</a>
-				</article>
-			</nav>
+				<figure>
+					<div>
+						<img
+							src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebb01ae74ee9142f5093ade004/4/en/default"
+							alt="Mix recommended"
+						/>
+						<button class="play center">
+							<svg
+								role="img"
+								height="15"
+								width="15"
+								fill="currentColor"
+								aria-hidden="true"
+								viewBox="0 0 24 24"
+								class="pause"
+							>
+								<path
+									d="M5.7 3a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7H5.7zm10 0a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-2.6z"
+								></path>
+							</svg>
+							<svg
+								role="img"
+								height="15"
+								width="15"
+								fill="currentColor"
+								aria-hidden="true"
+								viewBox="0 0 24 24"
+								class="start"
+							>
+								<path
+									d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+								></path>
+							</svg>
+						</button>
+					</div>
+					<legend>Daily Mix 4</legend>
+					<p>AMBKOR, natos y Waor, Nikone and more</p>
+				</figure>
+			</article>
 		</main>
 	</body>
 </html>
