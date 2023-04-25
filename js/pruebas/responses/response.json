@@ -1,0 +1,600 @@
+[
+	{
+		"collaborative": false,
+		"description": "",
+		"external_urls": {
+			"spotify": "https://open.spotify.com/playlist/5UawO1ETgyi3Nba3zJnDLR"
+		},
+		"href": "https://api.spotify.com/v1/playlists/5UawO1ETgyi3Nba3zJnDLR",
+		"id": "5UawO1ETgyi3Nba3zJnDLR",
+		"images": [
+			{
+				"height": 640,
+				"url": "https://mosaic.scdn.co/640/ab67616d0000b2731b0d9e321e064ef34b722c6cab67616d0000b2735d18cae5de27e488feb0f82aab67616d0000b273d0b8c555dc3c3fe62f8828daab67616d0000b273e1ee6c9e94318aaec307bd26",
+				"width": 640
+			},
+			{
+				"height": 300,
+				"url": "https://mosaic.scdn.co/300/ab67616d0000b2731b0d9e321e064ef34b722c6cab67616d0000b2735d18cae5de27e488feb0f82aab67616d0000b273d0b8c555dc3c3fe62f8828daab67616d0000b273e1ee6c9e94318aaec307bd26",
+				"width": 300
+			},
+			{
+				"height": 60,
+				"url": "https://mosaic.scdn.co/60/ab67616d0000b2731b0d9e321e064ef34b722c6cab67616d0000b2735d18cae5de27e488feb0f82aab67616d0000b273d0b8c555dc3c3fe62f8828daab67616d0000b273e1ee6c9e94318aaec307bd26",
+				"width": 60
+			}
+		],
+		"name": "$_$",
+		"owner": {
+			"display_name": "CAMILO GUERRERO",
+			"external_urls": {
+				"spotify": "https://open.spotify.com/user/guerrerocontrerascristiancamil"
+			},
+			"href": "https://api.spotify.com/v1/users/guerrerocontrerascristiancamil",
+			"id": "guerrerocontrerascristiancamil",
+			"type": "user",
+			"uri": "spotify:user:guerrerocontrerascristiancamil"
+		},
+		"primary_color": null,
+		"public": false,
+		"snapshot_id": "MTAwLDBjZDI5OTAzZDg2ZGVhYTgyOTY2ZWU0N2JiNzZlOWNiNjc4OGM0YjY=",
+		"tracks": {
+			"href": "https://api.spotify.com/v1/playlists/5UawO1ETgyi3Nba3zJnDLR/tracks",
+			"total": 82
+		},
+		"type": "playlist",
+		"uri": "spotify:playlist:5UawO1ETgyi3Nba3zJnDLR"
+	},
+	{
+		"collaborative": false,
+		"description": "",
+		"external_urls": {
+			"spotify": "https://open.spotify.com/playlist/2ecU3AFLQ5xG8RL7lhb9E9"
+		},
+		"href": "https://api.spotify.com/v1/playlists/2ecU3AFLQ5xG8RL7lhb9E9",
+		"id": "2ecU3AFLQ5xG8RL7lhb9E9",
+		"images": [
+			{
+				"height": 640,
+				"url": "https://mosaic.scdn.co/640/ab67616d0000b2735433ea60bbaab178eab5a848ab67616d0000b273651205fb9f381d686c619d2dab67616d0000b273d3d09f09ddea13dceee574b7ab67616d0000b273fc46c29e75fe87707a368672",
+				"width": 640
+			},
+			{
+				"height": 300,
+				"url": "https://mosaic.scdn.co/300/ab67616d0000b2735433ea60bbaab178eab5a848ab67616d0000b273651205fb9f381d686c619d2dab67616d0000b273d3d09f09ddea13dceee574b7ab67616d0000b273fc46c29e75fe87707a368672",
+				"width": 300
+			},
+			{
+				"height": 60,
+				"url": "https://mosaic.scdn.co/60/ab67616d0000b2735433ea60bbaab178eab5a848ab67616d0000b273651205fb9f381d686c619d2dab67616d0000b273d3d09f09ddea13dceee574b7ab67616d0000b273fc46c29e75fe87707a368672",
+				"width": 60
+			}
+		],
+		"name": "C-Kan",
+		"owner": {
+			"display_name": "CAMILO GUERRERO",
+			"external_urls": {
+				"spotify": "https://open.spotify.com/user/guerrerocontrerascristiancamil"
+			},
+			"href": "https://api.spotify.com/v1/users/guerrerocontrerascristiancamil",
+			"id": "guerrerocontrerascristiancamil",
+			"type": "user",
+			"uri": "spotify:user:guerrerocontrerascristiancamil"
+		},
+		"primary_color": null,
+		"public": false,
+		"snapshot_id": "OSw1MzI2M2E5MTE1YWRmNjljYmEyZjBmZTA0M2NhYjM5ZDI4NmU5ZTA3",
+		"tracks": {
+			"href": "https://api.spotify.com/v1/playlists/2ecU3AFLQ5xG8RL7lhb9E9/tracks",
+			"total": 7
+		},
+		"type": "playlist",
+		"uri": "spotify:playlist:2ecU3AFLQ5xG8RL7lhb9E9"
+	},
+	{
+		"collaborative": false,
+		"description": "",
+		"external_urls": {
+			"spotify": "https://open.spotify.com/playlist/1MccubZTzQ69ku3bpexKLy"
+		},
+		"href": "https://api.spotify.com/v1/playlists/1MccubZTzQ69ku3bpexKLy",
+		"id": "1MccubZTzQ69ku3bpexKLy",
+		"images": [
+			{
+				"height": 640,
+				"url": "https://mosaic.scdn.co/640/ab67616d0000b273438b13148562481279b945d0ab67616d0000b2737177f4893003134bcefde0b6ab67616d0000b27387982734f163fc944dee586cab67616d0000b273d74ef0cc14180515b0f7aeb2",
+				"width": 640
+			},
+			{
+				"height": 300,
+				"url": "https://mosaic.scdn.co/300/ab67616d0000b273438b13148562481279b945d0ab67616d0000b2737177f4893003134bcefde0b6ab67616d0000b27387982734f163fc944dee586cab67616d0000b273d74ef0cc14180515b0f7aeb2",
+				"width": 300
+			},
+			{
+				"height": 60,
+				"url": "https://mosaic.scdn.co/60/ab67616d0000b273438b13148562481279b945d0ab67616d0000b2737177f4893003134bcefde0b6ab67616d0000b27387982734f163fc944dee586cab67616d0000b273d74ef0cc14180515b0f7aeb2",
+				"width": 60
+			}
+		],
+		"name": "Others",
+		"owner": {
+			"display_name": "CAMILO GUERRERO",
+			"external_urls": {
+				"spotify": "https://open.spotify.com/user/guerrerocontrerascristiancamil"
+			},
+			"href": "https://api.spotify.com/v1/users/guerrerocontrerascristiancamil",
+			"id": "guerrerocontrerascristiancamil",
+			"type": "user",
+			"uri": "spotify:user:guerrerocontrerascristiancamil"
+		},
+		"primary_color": null,
+		"public": false,
+		"snapshot_id": "MTIsZjIxNDkxZGFiZDNlZDJhYWE5OGIxNTRlOGU0YzM4YjllYTRlZjgyOQ==",
+		"tracks": {
+			"href": "https://api.spotify.com/v1/playlists/1MccubZTzQ69ku3bpexKLy/tracks",
+			"total": 8
+		},
+		"type": "playlist",
+		"uri": "spotify:playlist:1MccubZTzQ69ku3bpexKLy"
+	},
+	{
+		"collaborative": false,
+		"description": "",
+		"external_urls": {
+			"spotify": "https://open.spotify.com/playlist/4y5LhNmsegkqfgVAn8Ts6m"
+		},
+		"href": "https://api.spotify.com/v1/playlists/4y5LhNmsegkqfgVAn8Ts6m",
+		"id": "4y5LhNmsegkqfgVAn8Ts6m",
+		"images": [
+			{
+				"height": 640,
+				"url": "https://mosaic.scdn.co/640/ab67616d0000b27327fda1adf296f242416b4230ab67616d0000b2736ca5c90113b30c3c43ffb8f4ab67616d0000b273dbb3dd82da45b7d7f31b1b42ab67616d0000b273dee6b58d35215322626b5701",
+				"width": 640
+			},
+			{
+				"height": 300,
+				"url": "https://mosaic.scdn.co/300/ab67616d0000b27327fda1adf296f242416b4230ab67616d0000b2736ca5c90113b30c3c43ffb8f4ab67616d0000b273dbb3dd82da45b7d7f31b1b42ab67616d0000b273dee6b58d35215322626b5701",
+				"width": 300
+			},
+			{
+				"height": 60,
+				"url": "https://mosaic.scdn.co/60/ab67616d0000b27327fda1adf296f242416b4230ab67616d0000b2736ca5c90113b30c3c43ffb8f4ab67616d0000b273dbb3dd82da45b7d7f31b1b42ab67616d0000b273dee6b58d35215322626b5701",
+				"width": 60
+			}
+		],
+		"name": "@_@",
+		"owner": {
+			"display_name": "CAMILO GUERRERO",
+			"external_urls": {
+				"spotify": "https://open.spotify.com/user/guerrerocontrerascristiancamil"
+			},
+			"href": "https://api.spotify.com/v1/users/guerrerocontrerascristiancamil",
+			"id": "guerrerocontrerascristiancamil",
+			"type": "user",
+			"uri": "spotify:user:guerrerocontrerascristiancamil"
+		},
+		"primary_color": null,
+		"public": false,
+		"snapshot_id": "NDIsNTdlMzVhMTk1NjIxMjY4MmNhZGYzNTYyMTBiOTg0NmFlMTZhNDNlMw==",
+		"tracks": {
+			"href": "https://api.spotify.com/v1/playlists/4y5LhNmsegkqfgVAn8Ts6m/tracks",
+			"total": 31
+		},
+		"type": "playlist",
+		"uri": "spotify:playlist:4y5LhNmsegkqfgVAn8Ts6m"
+	},
+	{
+		"collaborative": false,
+		"description": "",
+		"external_urls": {
+			"spotify": "https://open.spotify.com/playlist/4tLkGZXEikszsTHUpLLQfI"
+		},
+		"href": "https://api.spotify.com/v1/playlists/4tLkGZXEikszsTHUpLLQfI",
+		"id": "4tLkGZXEikszsTHUpLLQfI",
+		"images": [
+			{
+				"height": 640,
+				"url": "https://mosaic.scdn.co/640/ab67616d0000b273056e90910cbaf5c5b892aebaab67616d0000b27367bc29c251c777361b17a190ab67616d0000b273733cfd7114c704785e4f8da0ab67616d0000b2737c39dd133836c2c1c87e34d6",
+				"width": 640
+			},
+			{
+				"height": 300,
+				"url": "https://mosaic.scdn.co/300/ab67616d0000b273056e90910cbaf5c5b892aebaab67616d0000b27367bc29c251c777361b17a190ab67616d0000b273733cfd7114c704785e4f8da0ab67616d0000b2737c39dd133836c2c1c87e34d6",
+				"width": 300
+			},
+			{
+				"height": 60,
+				"url": "https://mosaic.scdn.co/60/ab67616d0000b273056e90910cbaf5c5b892aebaab67616d0000b27367bc29c251c777361b17a190ab67616d0000b273733cfd7114c704785e4f8da0ab67616d0000b2737c39dd133836c2c1c87e34d6",
+				"width": 60
+			}
+		],
+		"name": "Queen",
+		"owner": {
+			"display_name": "CAMILO GUERRERO",
+			"external_urls": {
+				"spotify": "https://open.spotify.com/user/guerrerocontrerascristiancamil"
+			},
+			"href": "https://api.spotify.com/v1/users/guerrerocontrerascristiancamil",
+			"id": "guerrerocontrerascristiancamil",
+			"type": "user",
+			"uri": "spotify:user:guerrerocontrerascristiancamil"
+		},
+		"primary_color": null,
+		"public": false,
+		"snapshot_id": "OSwwMTY5MjQ2YzRhNzJjNzhiNzJmYzI5ZDhmODMyYmVlYzRmYjMzYjY1",
+		"tracks": {
+			"href": "https://api.spotify.com/v1/playlists/4tLkGZXEikszsTHUpLLQfI/tracks",
+			"total": 6
+		},
+		"type": "playlist",
+		"uri": "spotify:playlist:4tLkGZXEikszsTHUpLLQfI"
+	},
+	{
+		"collaborative": false,
+		"description": "",
+		"external_urls": {
+			"spotify": "https://open.spotify.com/playlist/1u6WHos8Mk7Sr3kmy4v0Zv"
+		},
+		"href": "https://api.spotify.com/v1/playlists/1u6WHos8Mk7Sr3kmy4v0Zv",
+		"id": "1u6WHos8Mk7Sr3kmy4v0Zv",
+		"images": [
+			{
+				"height": 640,
+				"url": "https://mosaic.scdn.co/640/ab67616d0000b2730c8a0405b0035e48ab780eecab67616d0000b2731917a0f3f4152622a040913fab67616d0000b2733e42854096da9a3b1ca901c9ab67616d0000b273a91c10fe9472d9bd89802e5a",
+				"width": 640
+			},
+			{
+				"height": 300,
+				"url": "https://mosaic.scdn.co/300/ab67616d0000b2730c8a0405b0035e48ab780eecab67616d0000b2731917a0f3f4152622a040913fab67616d0000b2733e42854096da9a3b1ca901c9ab67616d0000b273a91c10fe9472d9bd89802e5a",
+				"width": 300
+			},
+			{
+				"height": 60,
+				"url": "https://mosaic.scdn.co/60/ab67616d0000b2730c8a0405b0035e48ab780eecab67616d0000b2731917a0f3f4152622a040913fab67616d0000b2733e42854096da9a3b1ca901c9ab67616d0000b273a91c10fe9472d9bd89802e5a",
+				"width": 60
+			}
+		],
+		"name": "Learn",
+		"owner": {
+			"display_name": "CAMILO GUERRERO",
+			"external_urls": {
+				"spotify": "https://open.spotify.com/user/guerrerocontrerascristiancamil"
+			},
+			"href": "https://api.spotify.com/v1/users/guerrerocontrerascristiancamil",
+			"id": "guerrerocontrerascristiancamil",
+			"type": "user",
+			"uri": "spotify:user:guerrerocontrerascristiancamil"
+		},
+		"primary_color": null,
+		"public": false,
+		"snapshot_id": "MTcsMGZmNDc5NjFhNTUyM2MzYWY2ZDVmZjlhNTNiMWViZTI2MWIxZWNlYg==",
+		"tracks": {
+			"href": "https://api.spotify.com/v1/playlists/1u6WHos8Mk7Sr3kmy4v0Zv/tracks",
+			"total": 12
+		},
+		"type": "playlist",
+		"uri": "spotify:playlist:1u6WHos8Mk7Sr3kmy4v0Zv"
+	},
+	{
+		"collaborative": false,
+		"description": "",
+		"external_urls": {
+			"spotify": "https://open.spotify.com/playlist/38MBa89vPjUfDqiL4dYKLh"
+		},
+		"href": "https://api.spotify.com/v1/playlists/38MBa89vPjUfDqiL4dYKLh",
+		"id": "38MBa89vPjUfDqiL4dYKLh",
+		"images": [
+			{
+				"height": 640,
+				"url": "https://mosaic.scdn.co/640/ab67616d0000b2732eaaeb751b33a358679e2476ab67616d0000b273316cfdd8143609279d871a69ab67616d0000b27399a99b36feca3355e07fd2c9ab67616d0000b273ae30d70aa1b50f372f15cf04",
+				"width": 640
+			},
+			{
+				"height": 300,
+				"url": "https://mosaic.scdn.co/300/ab67616d0000b2732eaaeb751b33a358679e2476ab67616d0000b273316cfdd8143609279d871a69ab67616d0000b27399a99b36feca3355e07fd2c9ab67616d0000b273ae30d70aa1b50f372f15cf04",
+				"width": 300
+			},
+			{
+				"height": 60,
+				"url": "https://mosaic.scdn.co/60/ab67616d0000b2732eaaeb751b33a358679e2476ab67616d0000b273316cfdd8143609279d871a69ab67616d0000b27399a99b36feca3355e07fd2c9ab67616d0000b273ae30d70aa1b50f372f15cf04",
+				"width": 60
+			}
+		],
+		"name": "O_O",
+		"owner": {
+			"display_name": "CAMILO GUERRERO",
+			"external_urls": {
+				"spotify": "https://open.spotify.com/user/guerrerocontrerascristiancamil"
+			},
+			"href": "https://api.spotify.com/v1/users/guerrerocontrerascristiancamil",
+			"id": "guerrerocontrerascristiancamil",
+			"type": "user",
+			"uri": "spotify:user:guerrerocontrerascristiancamil"
+		},
+		"primary_color": null,
+		"public": false,
+		"snapshot_id": "MTQ0LDUwYTI3NTU0MDA5NGUyZjk3YTVjN2Q5MzZiNTNkOGI5ZDYwNmQ2MmQ=",
+		"tracks": {
+			"href": "https://api.spotify.com/v1/playlists/38MBa89vPjUfDqiL4dYKLh/tracks",
+			"total": 127
+		},
+		"type": "playlist",
+		"uri": "spotify:playlist:38MBa89vPjUfDqiL4dYKLh"
+	},
+	{
+		"collaborative": false,
+		"description": "",
+		"external_urls": {
+			"spotify": "https://open.spotify.com/playlist/2fzd7oIREsG6TKI3QzGB8Y"
+		},
+		"href": "https://api.spotify.com/v1/playlists/2fzd7oIREsG6TKI3QzGB8Y",
+		"id": "2fzd7oIREsG6TKI3QzGB8Y",
+		"images": [
+			{
+				"height": 640,
+				"url": "https://mosaic.scdn.co/640/ab67616d0000b2732f22f3c3cfa14d302d07d7fcab67616d0000b273500d9a8d94b6ae368c6b4488ab67616d0000b273b05fef733b56a924517cfbdeab67616d0000b273efe04174e6ad295807c6b6d1",
+				"width": 640
+			},
+			{
+				"height": 300,
+				"url": "https://mosaic.scdn.co/300/ab67616d0000b2732f22f3c3cfa14d302d07d7fcab67616d0000b273500d9a8d94b6ae368c6b4488ab67616d0000b273b05fef733b56a924517cfbdeab67616d0000b273efe04174e6ad295807c6b6d1",
+				"width": 300
+			},
+			{
+				"height": 60,
+				"url": "https://mosaic.scdn.co/60/ab67616d0000b2732f22f3c3cfa14d302d07d7fcab67616d0000b273500d9a8d94b6ae368c6b4488ab67616d0000b273b05fef733b56a924517cfbdeab67616d0000b273efe04174e6ad295807c6b6d1",
+				"width": 60
+			}
+		],
+		"name": "★_★",
+		"owner": {
+			"display_name": "CAMILO GUERRERO",
+			"external_urls": {
+				"spotify": "https://open.spotify.com/user/guerrerocontrerascristiancamil"
+			},
+			"href": "https://api.spotify.com/v1/users/guerrerocontrerascristiancamil",
+			"id": "guerrerocontrerascristiancamil",
+			"type": "user",
+			"uri": "spotify:user:guerrerocontrerascristiancamil"
+		},
+		"primary_color": null,
+		"public": false,
+		"snapshot_id": "MjM1LDk3ZDAxMjAxNzQyYzZiYmZiNDY5OWQwNWEyMGJkNDFiMWM5ZDNjZmY=",
+		"tracks": {
+			"href": "https://api.spotify.com/v1/playlists/2fzd7oIREsG6TKI3QzGB8Y/tracks",
+			"total": 117
+		},
+		"type": "playlist",
+		"uri": "spotify:playlist:2fzd7oIREsG6TKI3QzGB8Y"
+	},
+	{
+		"collaborative": false,
+		"description": "",
+		"external_urls": {
+			"spotify": "https://open.spotify.com/playlist/7yEmVKU29TUB6RtE8rL1sh"
+		},
+		"href": "https://api.spotify.com/v1/playlists/7yEmVKU29TUB6RtE8rL1sh",
+		"id": "7yEmVKU29TUB6RtE8rL1sh",
+		"images": [
+			{
+				"height": 640,
+				"url": "https://mosaic.scdn.co/640/ab67616d0000b2731ecdbca21f5c516da8117b4aab67616d0000b27385042de0f59ad60a89578a05ab67616d0000b27386d7935bf8707649466ce12dab67616d0000b2739e46149cd6a9911aa79ccb37",
+				"width": 640
+			},
+			{
+				"height": 300,
+				"url": "https://mosaic.scdn.co/300/ab67616d0000b2731ecdbca21f5c516da8117b4aab67616d0000b27385042de0f59ad60a89578a05ab67616d0000b27386d7935bf8707649466ce12dab67616d0000b2739e46149cd6a9911aa79ccb37",
+				"width": 300
+			},
+			{
+				"height": 60,
+				"url": "https://mosaic.scdn.co/60/ab67616d0000b2731ecdbca21f5c516da8117b4aab67616d0000b27385042de0f59ad60a89578a05ab67616d0000b27386d7935bf8707649466ce12dab67616d0000b2739e46149cd6a9911aa79ccb37",
+				"width": 60
+			}
+		],
+		"name": "Rap",
+		"owner": {
+			"display_name": "CAMILO GUERRERO",
+			"external_urls": {
+				"spotify": "https://open.spotify.com/user/guerrerocontrerascristiancamil"
+			},
+			"href": "https://api.spotify.com/v1/users/guerrerocontrerascristiancamil",
+			"id": "guerrerocontrerascristiancamil",
+			"type": "user",
+			"uri": "spotify:user:guerrerocontrerascristiancamil"
+		},
+		"primary_color": null,
+		"public": false,
+		"snapshot_id": "MjMsNGZhMWFhNGNiNGQzNzI4MzgwNmJmMDU3YTJhZWUwNTJkZDg2MDRmZA==",
+		"tracks": {
+			"href": "https://api.spotify.com/v1/playlists/7yEmVKU29TUB6RtE8rL1sh/tracks",
+			"total": 19
+		},
+		"type": "playlist",
+		"uri": "spotify:playlist:7yEmVKU29TUB6RtE8rL1sh"
+	},
+	{
+		"collaborative": false,
+		"description": "",
+		"external_urls": {
+			"spotify": "https://open.spotify.com/playlist/3lRonQSJyPJSNwV5ku5O8i"
+		},
+		"href": "https://api.spotify.com/v1/playlists/3lRonQSJyPJSNwV5ku5O8i",
+		"id": "3lRonQSJyPJSNwV5ku5O8i",
+		"images": [
+			{
+				"height": 640,
+				"url": "https://mosaic.scdn.co/640/ab67616d0000b273131c50c33d7a072379376c75ab67616d0000b273374a32d39696d6ee63c41ca4ab67616d0000b27353e13a9e568364f6b7c53f1fab67616d0000b27354e8ad611bb1814a9d66eece",
+				"width": 640
+			},
+			{
+				"height": 300,
+				"url": "https://mosaic.scdn.co/300/ab67616d0000b273131c50c33d7a072379376c75ab67616d0000b273374a32d39696d6ee63c41ca4ab67616d0000b27353e13a9e568364f6b7c53f1fab67616d0000b27354e8ad611bb1814a9d66eece",
+				"width": 300
+			},
+			{
+				"height": 60,
+				"url": "https://mosaic.scdn.co/60/ab67616d0000b273131c50c33d7a072379376c75ab67616d0000b273374a32d39696d6ee63c41ca4ab67616d0000b27353e13a9e568364f6b7c53f1fab67616d0000b27354e8ad611bb1814a9d66eece",
+				"width": 60
+			}
+		],
+		"name": ":p",
+		"owner": {
+			"display_name": "CAMILO GUERRERO",
+			"external_urls": {
+				"spotify": "https://open.spotify.com/user/guerrerocontrerascristiancamil"
+			},
+			"href": "https://api.spotify.com/v1/users/guerrerocontrerascristiancamil",
+			"id": "guerrerocontrerascristiancamil",
+			"type": "user",
+			"uri": "spotify:user:guerrerocontrerascristiancamil"
+		},
+		"primary_color": null,
+		"public": false,
+		"snapshot_id": "MTAsZmJlMGU3NGNjOTBiZmUyMTc4Nzk5MzU3MzBhZGIwYmYxMDJmYzhhZA==",
+		"tracks": {
+			"href": "https://api.spotify.com/v1/playlists/3lRonQSJyPJSNwV5ku5O8i/tracks",
+			"total": 7
+		},
+		"type": "playlist",
+		"uri": "spotify:playlist:3lRonQSJyPJSNwV5ku5O8i"
+	},
+	{
+		"collaborative": false,
+		"description": "",
+		"external_urls": {
+			"spotify": "https://open.spotify.com/playlist/7ywbr7z6H48JkE4cNXjMKc"
+		},
+		"href": "https://api.spotify.com/v1/playlists/7ywbr7z6H48JkE4cNXjMKc",
+		"id": "7ywbr7z6H48JkE4cNXjMKc",
+		"images": [
+			{
+				"height": 640,
+				"url": "https://mosaic.scdn.co/640/ab67616d0000b2732ab22bd85ffe62c44980a736ab67616d0000b2732fbd77033247e889cb7d2ac4ab67616d0000b27367797668e9ebc3740419f0efab67616d0000b273cc0ed9b201052070bafd430b",
+				"width": 640
+			},
+			{
+				"height": 300,
+				"url": "https://mosaic.scdn.co/300/ab67616d0000b2732ab22bd85ffe62c44980a736ab67616d0000b2732fbd77033247e889cb7d2ac4ab67616d0000b27367797668e9ebc3740419f0efab67616d0000b273cc0ed9b201052070bafd430b",
+				"width": 300
+			},
+			{
+				"height": 60,
+				"url": "https://mosaic.scdn.co/60/ab67616d0000b2732ab22bd85ffe62c44980a736ab67616d0000b2732fbd77033247e889cb7d2ac4ab67616d0000b27367797668e9ebc3740419f0efab67616d0000b273cc0ed9b201052070bafd430b",
+				"width": 60
+			}
+		],
+		"name": "†_†",
+		"owner": {
+			"display_name": "CAMILO GUERRERO",
+			"external_urls": {
+				"spotify": "https://open.spotify.com/user/guerrerocontrerascristiancamil"
+			},
+			"href": "https://api.spotify.com/v1/users/guerrerocontrerascristiancamil",
+			"id": "guerrerocontrerascristiancamil",
+			"type": "user",
+			"uri": "spotify:user:guerrerocontrerascristiancamil"
+		},
+		"primary_color": null,
+		"public": false,
+		"snapshot_id": "MTg5LGI3NmZjMTI3ZDdlOTk5NDQ1MWNiYTY0ODlkOWFjMTBjZGUyYjNkNGI=",
+		"tracks": {
+			"href": "https://api.spotify.com/v1/playlists/7ywbr7z6H48JkE4cNXjMKc/tracks",
+			"total": 122
+		},
+		"type": "playlist",
+		"uri": "spotify:playlist:7ywbr7z6H48JkE4cNXjMKc"
+	},
+	{
+		"collaborative": false,
+		"description": "",
+		"external_urls": {
+			"spotify": "https://open.spotify.com/playlist/7ADsI9OjucYytSEUBx3Vv7"
+		},
+		"href": "https://api.spotify.com/v1/playlists/7ADsI9OjucYytSEUBx3Vv7",
+		"id": "7ADsI9OjucYytSEUBx3Vv7",
+		"images": [
+			{
+				"height": 640,
+				"url": "https://mosaic.scdn.co/640/ab67616d0000b2730ae4f4d42e4a09f3a29f64adab67616d0000b27395d87db330c27032e835def3ab67616d0000b27396a02d0546177208698e33ecab67616d0000b273dfdf210243811401b2e947bd",
+				"width": 640
+			},
+			{
+				"height": 300,
+				"url": "https://mosaic.scdn.co/300/ab67616d0000b2730ae4f4d42e4a09f3a29f64adab67616d0000b27395d87db330c27032e835def3ab67616d0000b27396a02d0546177208698e33ecab67616d0000b273dfdf210243811401b2e947bd",
+				"width": 300
+			},
+			{
+				"height": 60,
+				"url": "https://mosaic.scdn.co/60/ab67616d0000b2730ae4f4d42e4a09f3a29f64adab67616d0000b27395d87db330c27032e835def3ab67616d0000b27396a02d0546177208698e33ecab67616d0000b273dfdf210243811401b2e947bd",
+				"width": 60
+			}
+		],
+		"name": "*_*",
+		"owner": {
+			"display_name": "CAMILO GUERRERO",
+			"external_urls": {
+				"spotify": "https://open.spotify.com/user/guerrerocontrerascristiancamil"
+			},
+			"href": "https://api.spotify.com/v1/users/guerrerocontrerascristiancamil",
+			"id": "guerrerocontrerascristiancamil",
+			"type": "user",
+			"uri": "spotify:user:guerrerocontrerascristiancamil"
+		},
+		"primary_color": null,
+		"public": false,
+		"snapshot_id": "MzczLGFkOGY3MGI5ZGI0NDZlN2I4N2JlNTNhNWFhNWQzMDcwNjdhYzNlNDE=",
+		"tracks": {
+			"href": "https://api.spotify.com/v1/playlists/7ADsI9OjucYytSEUBx3Vv7/tracks",
+			"total": 78
+		},
+		"type": "playlist",
+		"uri": "spotify:playlist:7ADsI9OjucYytSEUBx3Vv7"
+	},
+	{
+		"collaborative": false,
+		"description": "",
+		"external_urls": {
+			"spotify": "https://open.spotify.com/playlist/2V2HHH3GSYjg9eN9yCP1bI"
+		},
+		"href": "https://api.spotify.com/v1/playlists/2V2HHH3GSYjg9eN9yCP1bI",
+		"id": "2V2HHH3GSYjg9eN9yCP1bI",
+		"images": [
+			{
+				"height": 640,
+				"url": "https://mosaic.scdn.co/640/ab67616d0000b27361e07e5ef5c84a83184b5fa0ab67616d0000b2736268568073da5d6d8eb17f42ab67616d0000b273cd5c1f0feefa83fe57076a95ab67616d0000b273e241333f30b3108b0b40955e",
+				"width": 640
+			},
+			{
+				"height": 300,
+				"url": "https://mosaic.scdn.co/300/ab67616d0000b27361e07e5ef5c84a83184b5fa0ab67616d0000b2736268568073da5d6d8eb17f42ab67616d0000b273cd5c1f0feefa83fe57076a95ab67616d0000b273e241333f30b3108b0b40955e",
+				"width": 300
+			},
+			{
+				"height": 60,
+				"url": "https://mosaic.scdn.co/60/ab67616d0000b27361e07e5ef5c84a83184b5fa0ab67616d0000b2736268568073da5d6d8eb17f42ab67616d0000b273cd5c1f0feefa83fe57076a95ab67616d0000b273e241333f30b3108b0b40955e",
+				"width": 60
+			}
+		],
+		"name": "Calero",
+		"owner": {
+			"display_name": "CAMILO GUERRERO",
+			"external_urls": {
+				"spotify": "https://open.spotify.com/user/guerrerocontrerascristiancamil"
+			},
+			"href": "https://api.spotify.com/v1/users/guerrerocontrerascristiancamil",
+			"id": "guerrerocontrerascristiancamil",
+			"type": "user",
+			"uri": "spotify:user:guerrerocontrerascristiancamil"
+		},
+		"primary_color": null,
+		"public": false,
+		"snapshot_id": "NTAsNWI1NjExZTkyNWY2NGJkY2U4ZWQwZGJkMDUwYjY3MzVlZmMxMTYwZg==",
+		"tracks": {
+			"href": "https://api.spotify.com/v1/playlists/2V2HHH3GSYjg9eN9yCP1bI/tracks",
+			"total": 40
+		},
+		"type": "playlist",
+		"uri": "spotify:playlist:2V2HHH3GSYjg9eN9yCP1bI"
+	}
+]
