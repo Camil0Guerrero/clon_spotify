@@ -1,4 +1,4 @@
-import data from "../assets/data.js";
+import { data } from "../assets/data.js";
 import searchParams from "./services/searchParams.js";
 
 const d = document;

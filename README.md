@@ -10,7 +10,7 @@ En caso de querer usar o ir viendo el desarrollo del proyecto es necesario hacer
   const data = {
     client_id: "",
     client_secret: "",
-    redirect_uri: "url que el api enviara el código",
+    redirect_uri: "url donde el api enviara el código",
     scope: "user-read-private user-read-email playlist-read-private user-top-read",
   };
 
