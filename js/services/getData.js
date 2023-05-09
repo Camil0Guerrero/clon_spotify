@@ -30,9 +30,10 @@ async function meInformation(access_token) {
 
 async function getLikedSongs(access_token) {
 	let songs = await fetchApi("v1/me/tracks/", access_token),
-		items = songs.items;
+		items = songs.items,
+		total = songs.total;
 
-	return items;
+	return [items, total];
 }
 
 async function getTopTracks(access_token) {
@@ -44,6 +45,8 @@ async function getTopTracks(access_token) {
 async function getPlayLists(access_token) {
 	let resPlayList = await fetchApi("v1/me/playlists", access_token),
 		playLists = resPlayList.items;
+
+	console.log(playLists, resPlayList);
 
 	return playLists;
 }
@@ -61,7 +64,7 @@ export default async function getData(operation, access_token, query) {
 			const search = await searchArtist(query, access_token);
 			return await search;
 
-		case "me":
+		case operations.me:
 			const information = await meInformation(access_token);
 			return information;
 
@@ -70,7 +73,7 @@ export default async function getData(operation, access_token, query) {
 
 			return topTracks;
 
-		case "playlists":
+		case operations.playLists:
 			const playLists = await getPlayLists(access_token);
 			return playLists;
 

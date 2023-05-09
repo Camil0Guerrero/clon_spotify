@@ -1,12 +1,3 @@
-import getData from "../../services/getData.js";
-import getToken from "../../services/getToken.js";
-import { operations } from "../../../assets/data.js";
-
-const d = document,
-	$tableSongs = d.querySelector(".tableSongs");
-
-let template = "";
-
 const calcTime = (ms) => {
 	let minutes = Math.floor((ms % (1000 * 60 * 60)) / (1000 * 60)),
 		seconds = ("0" + Math.floor((ms % (1000 * 60)) / 1000)).slice(-2);
@@ -25,36 +16,34 @@ const calcDate = (date = null) => {
 	return `<p>${montNames[mount]} ${day}, ${year} </p>`;
 };
 
-d.addEventListener("DOMContentLoaded", async (e) => {
-	let [access_token] = getToken();
-	let likedSongs = await getData(operations.likedSongs, access_token);
+export default async function showTable(songs = [], d = document) {
+	let $tableSongs = d.querySelector(".table-songs"),
+		template = "";
 
-	console.log(likedSongs);
-
-	likedSongs.map(({ added_at, track }) => {
+	songs.map(({ added_at, track }) => {
 		template += `
-      <tr>
+    <tr>
         <td>
           <img src="${track.album.images[0].url}" alt="${track.name}" />
-        </td>
-        <td>
+          </td>
+          <td>
           <a href="${track.uri}">
             <p>${track.name}</p>
           </a>
           <span>
-            ${track.artists.map((el) => ` <a href="${el.uri}">${el.name.split(",")}</a>`)}
+          ${track.artists.map((el) => ` <a href="${el.uri}">${el.name.split(",")}</a>`)}
           </span>
         </td>
         <td>
           <p>${track.album.name}</p>
         </td>
         <td>
-          <p>${calcDate(added_at)}</p>
+        <p>${calcDate(added_at)}</p>
         </td>
         <td> ${calcTime(track.duration_ms).minutes}:${calcTime(track.duration_ms).seconds} </td>
-      </tr>
+        </tr>
     `;
 	});
 
 	$tableSongs.innerHTML = template;
-});
+}

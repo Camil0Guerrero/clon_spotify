@@ -1,0 +1,234 @@
+/* Footer */
+footer {
+	position: fixed;
+	z-index: 9;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer {
+	background-color: #181818;
+	width: 100%;
+	height: 90px;
+	z-index: 2;
+	min-width: 800px;
+
+	position: absolute;
+	bottom: 0;
+
+	padding: 0 16px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 16px;
+}
+
+/* Information song */
+.reproduced-song-information {
+	color: #fff;
+	position: relative;
+	min-width: 180px;
+	width: 30%;
+	height: 56px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.reproduced-song-information img {
+	width: 56px;
+	height: 56px;
+}
+
+.reproduced-song-information .information-text a > * {
+	margin: 0;
+}
+
+.reproduced-song-information .information-text {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin: 0 5px;
+	overflow: hidden;
+}
+
+.reproduced-song-information .information-text a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.reproduced-song-information .information-text a h4 {
+	white-space: nowrap;
+	font-size: 0.875rem;
+	overflow: hidden;
+	transform: translateX(11%);
+}
+
+.reproduced-song-information .information-text a p {
+	color: #b3b3b3;
+	white-space: nowrap;
+	font-size: 0.675rem;
+}
+
+.reproduced-song-information button {
+	background-color: inherit;
+	border: none;
+	fill: #b3b3b3;
+}
+
+/* Other tools */
+/* nav of footer right */
+.other-tools {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	width: 30%;
+	min-width: 180px;
+}
+
+.other-tools button {
+	background-color: inherit;
+	border: none;
+	height: 32px;
+	width: 32px;
+}
+
+.other-tools button svg {
+	height: 16px;
+	width: 16px;
+	fill: #6a6a6a;
+}
+
+.other-tools .volume-bar {
+	background-color: #ffffff4d;
+	border-radius: 2px;
+	width: 40%;
+	height: 4px;
+	margin: 0;
+}
+
+.other-tools .volume-bar::-webkit-progress-bar {
+	background-color: #ffffff4d;
+	border-radius: 2px;
+}
+
+.other-tools .volume-bar::-webkit-progress-value {
+	background-color: #fff;
+	border-radius: 2px;
+}
+
+.other-tools .volume-bar::-webkit-progress-value:hover {
+	background-color: #1db954;
+}
+
+.other-tools .volume-bar::-moz-progress-bar {
+	background-color: #ffffff4d;
+	border-radius: 2px;
+	color: #fff;
+}
+
+/* Controls */
+.controls {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
+}
+
+/* Operations */
+.operations {
+	display: flex;
+	width: 100%;
+	flex-flow: row nowrap;
+	gap: 16px;
+	margin-bottom: 8px;
+	align-items: center;
+	justify-content: center;
+}
+
+.operations button {
+	background-color: inherit;
+	border: none;
+	fill: white;
+	height: 32px;
+	width: 32px;
+}
+
+.operations .play,
+.operations .pause {
+	background-color: #fff;
+	fill: #000;
+	margin-top: 0;
+}
+
+.operations .previous,
+.operations .next {
+	fill: #b3b3b3;
+}
+
+.operations .aleatory,
+.operations .repeat {
+	fill: #ffffff4d;
+}
+
+.operations .play svg,
+.operations .pause svg,
+.operations .previous svg,
+.operations .next svg {
+	height: 16px;
+	width: 16px;
+}
+
+.controls .time-control {
+	background-color: inherit;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+}
+
+.time-control span {
+	width: 40px;
+	color: #a7a7a7;
+	font-size: 0.6875rem;
+	font-weight: 400;
+}
+
+.time-control span:nth-child(1) {
+	text-align: right;
+}
+
+.time-control progress {
+	background-color: #ffffff4d;
+	border-radius: 2px;
+	width: 90%;
+	height: 4px;
+	margin: 0;
+}
+
+.time-control progress::-webkit-progress-bar {
+	background-color: #ffffff4d;
+	border-radius: 2px;
+}
+
+.time-control progress::-webkit-progress-value {
+	background-color: #fff;
+	border-radius: 2px;
+}
+
+.time-control progress::-webkit-progress-value:hover {
+	background-color: #1db954;
+}
+
+.time-control progress::-moz-progress-bar {
+	background-color: #ffffff4d;
+	border-radius: 2px;
+	color: #fff;
+}

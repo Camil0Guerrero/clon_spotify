@@ -1,17 +1,12 @@
 import getData from "../../services/getData.js";
 import getToken from "../../services/getToken.js";
+import { operations } from "../../../assets/data.js";
 
-const d = document,
-	$prueba = d.querySelector(".prueba");
-
-let template = "";
-
-d.addEventListener("DOMContentLoaded", async (e) => {
+export default async function playLists(d = document) {
+	let $playLists = d.querySelector(".playlists"),
+		template = "";
 	let [access_token] = getToken();
-	let resArtist = await getData("playlists", access_token);
-	console.log(resArtist);
-
-	let $title = resArtist.length > 1 ? `<h2>PlayLists</h2>` : `<h2>Playlist</h2>`;
+	let resArtist = await getData(operations.playLists, access_token);
 
 	resArtist.map((el) => {
 		template += `
@@ -22,10 +17,9 @@ d.addEventListener("DOMContentLoaded", async (e) => {
     `;
 	});
 
-	$prueba.innerHTML = `
-    ${$title}
+	$playLists.innerHTML = `
     <article class="playlists">
       ${template}
     </article>
     `;
-});
+}
