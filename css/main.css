@@ -11,6 +11,17 @@ main {
 	padding-bottom: var(--height-footer);
 }
 
+/* subtitles generics */
+main h2 {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.title-main {
+	font-size: 2rem;
+}
+
+/* initial letters of recommendation */
 .cards > div {
 	background-color: rgba(0, 0, 0, 0.7);
 
@@ -36,6 +47,7 @@ main {
 	border-bottom-left-radius: 10px;
 }
 
+/* Recommendation figures for artists and songs */
 .recently-heard {
 	--min-column-width: 270px;
 	--item-height: 64px;
@@ -43,6 +55,7 @@ main {
 	--row-gap: 12px;
 }
 
+/* Container for the play button */
 .content-card {
 	position: relative;
 
@@ -56,11 +69,11 @@ main {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	font-weight: bold;
-	font-size: 1.3rem;
 	white-space: nowrap;
 	max-width: 80%;
 }
 
+/* when the user passes over the recommendation they will see the button */
 .cards > div:hover .content-card button {
 	opacity: 1;
 	pointer-events: auto;
@@ -73,71 +86,14 @@ main {
 	gap: var(--row-gap) var(--column-gap);
 }
 
-/* Recommendations */
-/* .recommendations {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(157px, 1fr));
-	gap: 18px;
-	min-width: 432px;
-	min-height: 300px;
-	cursor: pointer;
-}
-
-.recommendations figure {
-	background-color: #181818;
-	font-size: 1rem;
-	border: thin solid #000;
-	margin: 0;
-	padding: 16px;
-	border-radius: 10px;
-}
-
-.recommendations figure div {
-	position: relative;
-}
-
-.recommendations figure img {
-	border-radius: 10px;
-	width: 100%;
-}
-
-.recommendations figure div button {
-	position: absolute;
-	right: 5%;
-	bottom: 5%;
-	cursor: pointer;
-	opacity: 0;
-	pointer-events: none;
-}
-
-.recommendations figure legend {
-	font-size: 1.3rem;
-	font-weight: bold;
-	margin-top: 1rem;
-}
-
-.recommendations figure p {
-	font-size: 1rem;
-	margin: 0;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
-	display: -webkit-box;
-	margin-top: 4px;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: normal;
-}
-
-.recommendations > figure:hover button {
-	opacity: 1;
-} */
-
 /* Sections of recommendations  */
+/* This container will limit what is seen on the screen */
 .container-section {
 	height: 270px;
 	overflow: hidden;
 }
 
+/* Define how our elements are coupled taking into account the defined height */
 .section {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(140px, 200px));
@@ -146,6 +102,7 @@ main {
 	grid-auto-rows: 270px;
 }
 
+/* recommendation letter styles */
 .section figure {
 	background-color: #242424;
 	border-radius: 10px;
@@ -175,6 +132,7 @@ main {
 	display: inline;
 }
 
+/* Table to display search results */
 .songs {
 	width: 100%;
 }
@@ -214,6 +172,7 @@ main button {
 	transition: all 0.3s ease;
 }
 
+/* Figures to show the playlists in the library */
 .container-img-figure {
 	position: relative;
 	width: 100%;
@@ -230,12 +189,6 @@ main button {
 	opacity: 1;
 	pointer-events: auto;
 	transform: translate(0, 0);
-}
-
-.content-card button {
-	opacity: 0;
-	pointer-events: none;
-	padding: 0;
 }
 
 .content-card button {

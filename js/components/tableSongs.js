@@ -16,10 +16,12 @@ const calcDate = (date = null) => {
 	return `<p>${montNames[mount]} ${day}, ${year} </p>`;
 };
 
+// This function will help us to show the songs in a table
 export default async function showTable(songs = [], d = document) {
 	let $tableSongs = d.querySelector(".table-songs"),
 		template = "";
 
+	// We can take the values separately from our arrays
 	songs.map(({ added_at, track }) => {
 		template += `
     <tr>

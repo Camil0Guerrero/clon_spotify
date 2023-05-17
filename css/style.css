@@ -14,7 +14,7 @@ html {
 
 body {
 	margin: 0;
-	font-family: Comic, Arial, Helvetica, sans-serif;
+	font-family: var(--font-family);
 	line-height: 1.6;
 }
 
@@ -27,6 +27,7 @@ body {
 	--width-menu: clamp(250px, 20vw, 320px);
 	--width-header: calc(100% - var(--width-menu));
 	--height-footer: 90px;
+	--font-family: CircularSp, Comic, Arial;
 }
 
 /* ********** Reset ********** */
@@ -34,12 +35,7 @@ a,
 article,
 aside,
 audio,
-b,
-code,
-details,
 div,
-em,
-figcaption,
 figure,
 footer,
 form,
@@ -47,20 +43,14 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6,
 header,
 html,
-i,
-iframe,
 img,
-legend,
 li,
 menu,
 nav,
 p,
 span,
-summary,
 table,
 tbody,
 td,
@@ -78,6 +68,7 @@ u {
 h2 {
 	margin: 1rem;
 }
+
 /* ********** Components *************/
 /* button */
 .play {
@@ -104,6 +95,7 @@ h2 {
 
 /* *** Utilities *** */
 
+/* Add color to options that are active */
 .active svg {
 	fill: var(--secondary-color);
 }

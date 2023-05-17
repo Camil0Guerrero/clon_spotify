@@ -1,6 +1,5 @@
 export default async function removeStyles(d = document) {
 	// Remove the CSS of the others pages
-
 	if (d.querySelector(`link[href*="liked"]`)) {
 		let style = d.querySelector(`link[href*="liked"]`);
 		style.remove();

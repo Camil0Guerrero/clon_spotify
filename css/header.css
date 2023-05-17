@@ -6,6 +6,7 @@ header {
 	width: 100%;
 }
 
+/* General styles */
 .header {
 	background-color: var(--bg-color-header);
 	color: white;
@@ -18,6 +19,7 @@ header {
 	padding: 1rem 32px;
 }
 
+/* Container for define spaces */
 .content-header {
 	display: grid;
 	grid-template-columns: 15% 60% 30%;
@@ -25,14 +27,14 @@ header {
 
 /*** Buttons ***/
 /* Previous */
-.content-header .btn-previous-next {
+.btn-previous-next {
 	display: flex;
 	gap: 8px;
 	width: 6rem;
 	height: 2rem;
 }
 
-.content-header .btn-previous-next .previous {
+.previous {
 	background-color: #000;
 	border-radius: 50%;
 	border: none;
@@ -43,14 +45,14 @@ header {
 	opacity: 0.6;
 }
 
-.content-header .btn-previous-next .previous svg {
+.previous svg {
 	fill: #fff;
 	width: 16px;
 	height: 16px;
 }
 
 /* Next */
-.content-header .btn-previous-next .next {
+.next {
 	background-color: #000;
 	border-radius: 50%;
 	border: none;
@@ -59,14 +61,14 @@ header {
 	opacity: 0.6;
 }
 
-.content-header .btn-previous-next .next svg {
+.next svg {
 	fill: #fff;
 	width: 16px;
 	height: 16px;
 }
 
 /*** Core Content ***/
-.content-header .core-content {
+.core-content {
 	display: flex;
 	align-items: center;
 	gap: 0.25rem;
@@ -76,7 +78,7 @@ header {
 /* Name user */
 .content-header .core-content span {
 	font-size: 1.5rem;
-	font-weight: bold;
+	font-weight: 700;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
@@ -90,6 +92,7 @@ header {
 	height: 2rem;
 }
 
+/* For show account options */
 .information-user button {
 	overflow: hidden;
 	background-color: rgba(0, 0, 0, 0.7);
@@ -120,6 +123,7 @@ header {
 	height: 28px;
 }
 
+/* Name */
 .information-user span {
 	position: absolute;
 	left: 20%;
@@ -145,7 +149,6 @@ header {
 	background-color: gray;
 	width: 190px;
 	font-size: 0.875rem;
-	font-family: CircularSp;
 
 	position: absolute;
 	inset: 0px 0px auto auto;

@@ -1,5 +1,5 @@
-import getData from "../../services/getData.js";
-import { operations } from "../../../assets/data.js";
+import getData from "../../js/services/getData.js";
+import { operations } from "../../assets/data.js";
 
 let d = document,
 	iconOpen = `
@@ -7,6 +7,7 @@ let d = document,
 		`;
 
 export default async function getDataUser() {
+	// With this function display user information
 	const $infoUserBtn = d.querySelector(".information-user button");
 
 	let resArtist = await getData(operations.me);

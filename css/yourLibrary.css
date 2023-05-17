@@ -1,3 +1,4 @@
+/* Define how our elements will be displayed */
 .container-playlists {
 	width: 100%;
 	display: grid;
@@ -52,6 +53,7 @@ h3 {
 	padding-bottom: 4px;
 }
 
+/* This card occupies double */
 .card-liked-songs {
 	font-size: 1rem;
 	background-image: linear-gradient(149.46deg, #450af5, #8e8ee5 99.16%);
@@ -68,6 +70,7 @@ h3 {
 	position: relative;
 }
 
+/* Container to display the liked songs with artists */
 .songs {
 	max-height: 130px;
 
@@ -90,6 +93,7 @@ h3 {
 	font-size: 1rem;
 }
 
+/* button animation */
 main button {
 	opacity: 0;
 	display: none;
@@ -112,6 +116,7 @@ main button {
 	transform: translate(0, 0);
 }
 
+/* Container to display playlist cards */
 .container-img-figure {
 	position: relative;
 	width: 100%;
@@ -137,7 +142,7 @@ main button {
 	color: #fff;
 	text-decoration: none;
 	font-size: 0.875rem;
-	font-weight: 400;
+	font-weight: 700;
 	padding: 0.5rem;
 
 	line-height: 1;

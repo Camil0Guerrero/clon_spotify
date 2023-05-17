@@ -5,11 +5,13 @@ const calcTime = (ms) => {
 };
 
 export default function footer(informationSong, d = document) {
-	const $information = d.querySelector(".reproduced-song-information"),
+	// This function is in charge of taking the information of the song and putting it in the footer
+	let template = "",
 		el = informationSong[0];
 
-	$information.innerHTML = `<img src="${el.album.images[0].url}" alt="Image of the album ${el.album.name}" />`;
-	$information.innerHTML += `
+	template = `<img src="${el.album.images[0].url}" alt="Image of the album ${el.album.name}" />`;
+
+	template += `
     <div class="information-text">
       <a href="${el.href}">
         <h4>${el.name}</h4>
@@ -21,7 +23,8 @@ export default function footer(informationSong, d = document) {
       </span>
     </div>
   `;
-	$information.innerHTML += `
+
+	template += `
     <button>
 			<svg height="16" width="16" fill="#b3b3b3">
 				<path
@@ -29,9 +32,12 @@ export default function footer(informationSong, d = document) {
 			</svg>
 		</button>
   `;
-	$information.innerHTML += `
+
+	template += `
   <audio src="${el.preview_url}" id="${el.id}"></audio>
   `;
+
+	d.querySelector(".reproduced-song-information").innerHTML = template;
 
 	d.querySelector(".time-duration").innerHTML = `${calcTime(el.duration_ms).minutes}:${
 		calcTime(el.duration_ms).seconds

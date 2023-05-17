@@ -15,10 +15,15 @@ async function fetchApi(endpoint, method = "GET", body) {
 		});
 
 		if (res.ok) {
-			let artists = await res.json();
+			// This state is when no songs are playing on spotify
+			if (res.status === 204) {
+				return "not playing";
+			}
 
-			return await artists;
+			let response = await res.json();
+			return await response;
 		} else if (res.status === 401) {
+			// If it returns this error, it may be because our token has expired, so it is necessary to log in again
 			window.location.href = "http://127.0.0.1:5500/login.html";
 		} else {
 			throw { status: res.status, statusText: res.statusText };
@@ -36,8 +41,10 @@ async function meArtists() {
 }
 
 async function meDevices() {
-	let resDevices = await fetchApi(`me/player`),
-		item = resDevices.item,
+	let resDevices = await fetchApi(`me/player`);
+	if (resDevices === "not playing") return null;
+
+	let item = resDevices.item,
 		infoDevice = resDevices.device;
 
 	return [resDevices, item, infoDevice];
@@ -61,12 +68,6 @@ async function getLikedSongs() {
 		total = songs.total;
 
 	return [items, total];
-}
-
-async function getTopTracks() {
-	let information = await fetchApi("me/top/tracks?limit=5&offset=0"),
-		items = information.items;
-	return items;
 }
 
 async function getPlayLists() {
@@ -97,7 +98,10 @@ async function search(query, type, limit) {
 }
 
 export default async function getData(operation, limit = 20, query, type) {
+	// I have created these operations in a separate file so that it is more organized, also if it is necessary to make changes it will only be done in this one. The values that I have assigned have been Symbols so that each of our operations are unique
 	switch (operation) {
+		// All our operations are done from a fetch, only the data we need and the endpoint will change
+
 		case operations.search:
 			const resSearch = await search(query, type, limit);
 			return await resSearch;
@@ -105,11 +109,6 @@ export default async function getData(operation, limit = 20, query, type) {
 		case operations.me:
 			const information = await meInformation();
 			return information;
-
-		case "topTracks":
-			const topTracks = await getTopTracks();
-
-			return topTracks;
 
 		case operations.playLists:
 			const playLists = await getPlayLists();

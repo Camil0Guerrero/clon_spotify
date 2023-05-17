@@ -1,4 +1,5 @@
 /*** Menu ***/
+/* Nav of the left */
 .menu {
 	background-color: var(--primary-bg-color);
 	display: flex;
@@ -19,11 +20,11 @@
 	padding: 0 24px;
 }
 
-.menu .logo:hover {
+.logo:hover {
 	cursor: pointer;
 }
 
-.menu .logo:hover > svg {
+.logo:hover > svg {
 	transform: scale(1.1);
 }
 
@@ -42,15 +43,24 @@
 	height: 40px;
 }
 
-.menu .pages a svg {
+/* Home, Search, Your Library */
+.pages a svg {
 	width: 24px;
 	height: 24px;
 }
 
-.menu .options {
+/* Create playlist and liked songs */
+.options {
 	margin-top: 24px;
 }
 
+.pages,
+.options {
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+/* Style for the separator */
 .menu hr {
 	width: 70%;
 	border: none;
@@ -60,6 +70,7 @@
 	border-radius: 1px;
 }
 
+/* Define the background of our image */
 .icon-create-playlist {
 	background-color: var(--primary-color);
 	border-radius: 2px;
@@ -77,12 +88,16 @@
 	height: 24px;
 }
 
+/* List of playlists */
 .playlists {
 	background-color: var(--primary-bg-color);
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	padding: 8px;
+	font-weight: 400;
+	font-size: 1rem;
+	padding-bottom: var(--height-footer);
 }
 
 .playlists a {

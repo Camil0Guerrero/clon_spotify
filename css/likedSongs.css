@@ -19,6 +19,7 @@
 	box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
 }
 
+/* Title and information of the section */
 .information-songs {
 	display: flex;
 	flex-direction: column;
@@ -27,12 +28,13 @@
 
 .headline h1 {
 	font-size: 5vw;
-	font-weight: 900;
+	font-weight: 700;
 	margin: 0.08rem 0px 0.12rem;
 }
 
 .headline span {
 	font-size: 0.875rem;
+	font-weight: 700;
 }
 
 .headline .user-information {
@@ -40,9 +42,10 @@
 }
 
 .headline .user-information a {
+	font-size: 0.875rem;
 	text-decoration: none;
 	color: #fff;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .headline .user-information img {
@@ -51,10 +54,12 @@
 	height: 24px;
 }
 
+/* overwrite the background color */
 .header {
 	background-color: var(--bgc-primary);
 }
 
+/* background gradient  */
 main {
 	background-image: linear-gradient(var(--bgc-primary) -30%, var(--bgc-secondary));
 	padding: 0;
@@ -66,11 +71,14 @@ main {
 }
 
 .btn-start button {
+	opacity: 1;
+	position: initial;
 	height: 56px;
 	width: 56px;
 }
 
 /* Table */
+/* General styles */
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -86,6 +94,7 @@ table img {
 	border-radius: 5px;
 }
 
+/* styles so that it stays just below our header */
 table thead {
 	color: #fff;
 	position: sticky;
@@ -108,6 +117,8 @@ table tbody tr {
 
 table thead th {
 	text-align: start;
+	font-size: 0.875rem;
+	font-weight: 700;
 }
 
 table thead tr {
@@ -122,7 +133,8 @@ tbody a {
 tbody a p {
 	color: #fff;
 	margin: 0;
-	font-weight: bold;
+	font-size: 1rem;
+	font-weight: 400;
 }
 
 tbody a:hover {
@@ -136,4 +148,11 @@ table td:nth-child(2) {
 	justify-content: center;
 	align-items: flex-start;
 	gap: 8px;
+}
+
+table td:nth-child(3),
+table td:nth-child(4),
+table td:nth-child(5) {
+	font-size: 0.875rem;
+	font-weight: 400;
 }

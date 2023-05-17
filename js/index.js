@@ -1,8 +1,8 @@
 import jsHeader from "../pages/header/header.js";
-import optionsUser from "./components/information-user/optionsUser.js";
+import optionsUser from "../trash/information-user/optionsUser.js";
 import importFile from "./services/importFile.js";
 import setIcons from "./services/setIcons.js";
-import playLists from "./components/playLists/playlists.js";
+import playLists from "./components/playlists.js";
 import main from "../pages/main/main.js";
 import likedSongs from "../pages/likedSongs/likedSongs.js";
 import yourLibrary from "../pages/yourLibrary/yourLibrary.js";
@@ -14,15 +14,17 @@ const d = document;
 
 // Loaded
 d.addEventListener("DOMContentLoaded", async () => {
+	// I give a little time to wait for the response from the API
 	setTimeout(() => {
 		setIcons();
 		setTimeout(() => {
 			device();
-		}, 1000);
+		}, 500);
 	}, 3000);
 });
 
 d.addEventListener("readystatechange", async () => {
+	// The structure of our html is separate, so we get it and add it
 	const htmlHead = await importFile("head"),
 		htmlHeader = await importFile("header"),
 		htmlNavMenu = await importFile("navMenu"),

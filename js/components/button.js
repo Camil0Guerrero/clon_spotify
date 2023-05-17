@@ -1,6 +1,7 @@
-import { images } from "../../../assets/images.js";
+import { images } from "../../assets/images.js";
 
 export default function button(playerButton, d = document) {
+	// The player button is neccessary because it contains the id of the song
 	const $audio = d.getElementById(playerButton.dataset.id),
 		$timeline = d.querySelector(".timeline"),
 		$player = d.querySelector(".player-button");
@@ -13,20 +14,24 @@ export default function button(playerButton, d = document) {
 		return;
 	}
 
+	// The initial volume will be low
 	$audio.volume = 0.1;
 	$volumeRange.style.backgroundSize = `${$audio.volume * 100}%`;
 	$volumeRange.value = $audio.volume;
 
 	const audioEnded = () => {
+		// When the audio ends our values will be reset
 		$player.innerHTML = images.iconPlay;
 		$audio.currentTime = 0;
 	};
 
 	const changeTimeLinePosition = () => {
+		// We define how much of our line should be colored
 		const percentagePosition = (100 * $audio.currentTime) / $audio.duration;
 		$timeline.style.backgroundSize = `${percentagePosition}%`;
 		$timeline.value = percentagePosition;
 
+		// ~~ These symbols are bitwise operators and help us to take the number without its decimals.
 		d.querySelector(".current-time").innerHTML = ("0" + `${~~$audio.currentTime}`).slice(-2);
 	};
 
@@ -52,6 +57,7 @@ export default function button(playerButton, d = document) {
 	};
 
 	const toggleAudio = () => {
+		// Change audio playback
 		if ($audio.paused) {
 			$audio.play();
 			$player.innerHTML = images.iconPause;

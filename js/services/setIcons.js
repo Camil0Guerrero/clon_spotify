@@ -1,3 +1,5 @@
+// This file is in charge of finding and incorporating the icons
+
 import { images } from "../../assets/images.js";
 
 export default function setIcons(d = document) {
@@ -13,7 +15,7 @@ export default function setIcons(d = document) {
 			$iconCreatePlaylist = d.querySelector(".icon-create-playlist"),
 			$iconLikedSongs = d.querySelector(".icon-liked-songs"),
 			// Footer
-			$iconAleatory = d.querySelector(".aleatory-song"),
+			$iconShuffle = d.querySelector(".shuffle-song"),
 			$iconPreviousSong = d.querySelector(".previous-song"),
 			$iconNextSong = d.querySelector(".next-song"),
 			$repeat = d.querySelector(".repeat-song"),
@@ -44,7 +46,7 @@ export default function setIcons(d = document) {
 		$iconLikedSongs.innerHTML = images.iconLikedSongs;
 
 		// Footer
-		$iconAleatory.innerHTML = images.iconAleatory;
+		$iconShuffle.innerHTML = images.iconAleatory;
 
 		$iconPreviousSong.innerHTML = images.iconPreviousSong;
 

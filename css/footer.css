@@ -6,6 +6,7 @@ footer {
 	width: 100%;
 }
 
+/* Define the general properties of the footer, in addition to positioning it at the bottom */
 .footer {
 	background-color: #181818;
 	width: 100%;
@@ -24,6 +25,7 @@ footer {
 }
 
 /* Information song */
+/* album thumbnail and artist name*/
 .reproduced-song-information {
 	color: #fff;
 	position: relative;
@@ -65,10 +67,19 @@ footer {
 	text-decoration: underline;
 }
 
+/* Name */
 .information-text a h4 {
 	white-space: nowrap;
 	font-size: 0.875rem;
 	overflow: hidden;
+}
+
+/* Artists */
+.information-text .artists {
+	width: 80%;
+	color: #b3b3b3;
+	font-size: 0.6875rem;
+	font-weight: 400;
 }
 
 .information-text a p {
@@ -77,13 +88,7 @@ footer {
 	font-size: 0.675rem;
 }
 
-.information-text .artists {
-	width: 80%;
-	color: #b3b3b3;
-	font-size: 0.6875rem;
-	font-weight: 400;
-}
-
+/* Liked song */
 .reproduced-song-information button {
 	background-color: inherit;
 	border: none;
@@ -101,6 +106,7 @@ footer {
 	min-width: 180px;
 }
 
+/* Lyrics, queue, devices and volume */
 .other-tools button {
 	background-color: inherit;
 	border: none;
@@ -112,34 +118,6 @@ footer {
 	height: 16px;
 	width: 16px;
 	fill: #6a6a6a;
-}
-
-.other-tools .volume-bar {
-	background-color: #ffffff4d;
-	border-radius: 2px;
-	width: 40%;
-	height: 4px;
-	margin: 0;
-}
-
-.other-tools .volume-bar::-webkit-progress-bar {
-	background-color: #ffffff4d;
-	border-radius: 2px;
-}
-
-.other-tools .volume-bar::-webkit-progress-value {
-	background-color: #fff;
-	border-radius: 2px;
-}
-
-.other-tools .volume-bar::-webkit-progress-value:hover {
-	background-color: #1db954;
-}
-
-.other-tools .volume-bar::-moz-progress-bar {
-	background-color: #ffffff4d;
-	border-radius: 2px;
-	color: #fff;
 }
 
 /* Controls */
@@ -162,6 +140,7 @@ footer {
 	justify-content: center;
 }
 
+/* shuffle, previous, play and repeat */
 .operations button {
 	background-color: inherit;
 	border: none;
@@ -204,6 +183,7 @@ footer {
 	gap: 8px;
 }
 
+/* Current and duration time */
 .time-control span {
 	width: 40px;
 	color: #a7a7a7;
@@ -211,67 +191,19 @@ footer {
 	font-weight: 400;
 }
 
+/* Current time */
 .time-control span:nth-child(1) {
 	text-align: right;
 }
 
-.time-control progress {
-	background-color: #ffffff4d;
-	border-radius: 2px;
-	width: 90%;
-	height: 4px;
-	margin: 0;
-}
-
-.time-control progress::-webkit-progress-bar {
-	background-color: #ffffff4d;
-	border-radius: 2px;
-}
-
-.time-control progress::-webkit-progress-value {
-	background-color: #fff;
-	border-radius: 2px;
-}
-
-.time-control progress::-webkit-progress-value:hover {
-	background-color: #1db954;
-}
-
-.time-control progress::-moz-progress-bar {
-	background-color: #ffffff4d;
-	border-radius: 2px;
-	color: #fff;
-}
-
 /* Audio */
-
 .controls {
 	--player-button-width: 3rem;
 	--sound-button-width: 2rem;
 	--space: 0.5rem;
-
-	/* display: flex;
-	flex-direction: row;
-	align-items: center;
-	width: 100%;
-	margin-top: 10px; */
 }
 
-/* .player-button {
-	background-color: transparent;
-	border: 0;
-	width: var(--player-button-width);
-	height: var(--player-button-width);
-	cursor: pointer;
-	padding: 0;
-	margin: 5px;
-} */
-
-/* button > svg {
-	fill: #fff;
-} */
-
-/* timeline  */
+/* time and volume line */
 .timeline,
 .volume-range {
 	appearance: none;
@@ -285,7 +217,7 @@ footer {
 	background-repeat: no-repeat;
 }
 
-/* ball in the process of the song */
+/* ball in the process of the song and in the volume */
 .timeline::-webkit-slider-thumb,
 .volume-range::-webkit-slider-thumb {
 	appearance: none;

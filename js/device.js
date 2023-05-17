@@ -1,4 +1,4 @@
-// This document is important for me because i'm want learn so much with it
+// This file helps us connect with the information that Spotify is playing on another device
 
 import { operations } from "../assets/data.js";
 import { images } from "../assets/images.js";
@@ -14,7 +14,6 @@ const calcTime = (ms) => {
 };
 
 async function infoSong(information) {
-	console.log(information);
 	const $timeline = d.querySelector(".timeline");
 
 	// Sound
@@ -71,7 +70,7 @@ async function infoSong(information) {
 		}
 
 		if (information.shuffle_state) {
-			let $shuffle = d.querySelector(".aleatory-song");
+			let $shuffle = d.querySelector(".shuffle-song");
 
 			$shuffle.classList.add("active");
 		}
@@ -81,11 +80,11 @@ async function infoSong(information) {
 }
 
 export default async function device() {
-	const [resDevices, item, infoDevice] = await getData(operations.meDevices);
+	const response = await getData(operations.meDevices);
 
-	if (!resDevices) {
-		return;
-	}
+	if (!response) return;
+
+	const [resDevices, item, infoDevice] = await getData(operations.meDevices);
 
 	d.querySelector("head").innerHTML += `<link rel="stylesheet" href="css/device.css" />`;
 
