@@ -1,3 +1,4 @@
+import { operations } from "../../assets/data.js";
 import getData from "../../js/services/getData.js";
 import getToken from "../../js/services/getToken.js";
 
@@ -6,8 +7,8 @@ const d = document;
 let template = "";
 
 d.addEventListener("DOMContentLoaded", async (e) => {
-	let [access_token, refresh_token] = getToken();
-	let resArtist = await getData("artists", access_token, `Blake`);
+	let [access_token] = getToken();
+	let resArtist = await getData(operations.artists, access_token, `Blake`);
 
 	let $prueba = d.querySelector(".prueba");
 	resArtist.map((el) => {

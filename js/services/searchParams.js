@@ -18,7 +18,7 @@ const autenticateUser = async (spotyCode, client_id, client_secret, redirect_uri
 		if (res.ok) {
 			localStorage.setItem("access_token", json.access_token);
 			localStorage.setItem("refresh_token", json.refresh_token);
-			window.location.href = `http://127.0.0.1:5500/pruebas.html`;
+			window.location.href = `http://127.0.0.1:5500`;
 		} else {
 			throw { status: res.status, statusText: res.statusText };
 		}

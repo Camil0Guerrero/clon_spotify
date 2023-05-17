@@ -1,12 +1,10 @@
 import getData from "../../services/getData.js";
-import getToken from "../../services/getToken.js";
 import { operations } from "../../../assets/data.js";
 
 export default async function playLists(d = document) {
 	let $playLists = d.querySelector(".playlists"),
 		template = "";
-	let [access_token] = getToken();
-	let resArtist = await getData(operations.playLists, access_token);
+	let resArtist = await getData(operations.playLists);
 
 	resArtist.map((el) => {
 		template += `

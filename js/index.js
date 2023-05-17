@@ -6,33 +6,67 @@ import playLists from "./components/playLists/playlists.js";
 import main from "../pages/main/main.js";
 import likedSongs from "../pages/likedSongs/likedSongs.js";
 import yourLibrary from "../pages/yourLibrary/yourLibrary.js";
+import search from "../pages/search/search.js";
+import removeStyles from "./services/removeStyles.js";
+import device from "./device.js";
 
 const d = document;
 
-d.addEventListener("DOMContentLoaded", async (e) => {
-	const htmlHeader = await importFile("header"),
+// Loaded
+d.addEventListener("DOMContentLoaded", async () => {
+	setTimeout(() => {
+		setIcons();
+		setTimeout(() => {
+			device();
+		}, 1000);
+	}, 3000);
+});
+
+d.addEventListener("readystatechange", async () => {
+	const htmlHead = await importFile("head"),
+		htmlHeader = await importFile("header"),
 		htmlNavMenu = await importFile("navMenu"),
 		htmlFooter = await importFile("footer"),
 		htmlMain = await importFile("main");
+
 	jsHeader();
-	setIcons();
 
 	setTimeout(() => {
 		playLists();
 		main();
 	}, 300);
 
+	d.querySelector("html").innerHTML = htmlHead;
 	d.querySelector("body").innerHTML = htmlHeader;
 	d.querySelector("body").innerHTML += htmlNavMenu;
-	d.querySelector("body").innerHTML += htmlMain;
+	d.querySelector("body").innerHTML += `<main>${htmlMain}</main>`;
 	d.querySelector("body").innerHTML += htmlFooter;
+
+	// setIcons();
 });
 
+// Click
 d.addEventListener("click", async (e) => {
 	e.preventDefault();
+	e.stopPropagation();
 	optionsUser(e);
 
+	// Home
+	if (e.target.matches(".home") || e.target.matches(".home *")) {
+		removeStyles();
+
+		d.querySelector(".core-content").innerHTML = "";
+
+		const htmlMain = await importFile("main");
+
+		d.querySelector("main").innerHTML = htmlMain;
+		main();
+		setIcons();
+	}
+
+	// Liked Songs
 	if (e.target.matches(".liked-songs") || e.target.matches(".liked-songs *")) {
+		removeStyles();
 		const htmlTable = await importFile("likedSongs"),
 			iconTimeTable = `
     		<svg role="img" height="16" width="16" viewBox="0 0 16 16" fill="currentColor">
@@ -41,7 +75,11 @@ d.addEventListener("click", async (e) => {
 				</svg>
  		 	`;
 
-		d.querySelector("head").innerHTML += `<link rel="stylesheet" href="css/likedSongs.css" />`;
+		if (!d.querySelector(`link[href*="liked"]`)) {
+			let styleLine = `<link rel="stylesheet" href="css/likedSongs.css" />`;
+			d.querySelector("head").innerHTML += styleLine;
+		}
+
 		d.querySelector("main").innerHTML = await htmlTable;
 		d.querySelector(".time-icon").innerHTML = iconTimeTable;
 		setIcons();
@@ -49,10 +87,31 @@ d.addEventListener("click", async (e) => {
 		likedSongs();
 	}
 
+	// Search
+	if (e.target.matches(".search") || e.target.matches(".search *")) {
+		removeStyles();
+		const htmlSearch = await importFile("search");
+
+		if (!d.querySelector(`link[href*="search"]`)) {
+			let styleLine = `<link rel="stylesheet" href="css/search.css" />`;
+			d.querySelector("head").innerHTML += styleLine;
+		}
+
+		d.querySelector("main").innerHTML = htmlSearch;
+
+		search();
+	}
+
+	// Library
 	if (e.target.matches(".library") || e.target.matches(".library *")) {
+		removeStyles();
 		const htmlLibrary = await importFile("yourLibrary");
 
-		d.querySelector("head").innerHTML += `<link rel="stylesheet" href="css/yourLibrary.css" />`;
+		if (!d.querySelector(`link[href*="your"]`)) {
+			let styleLine = `<link rel="stylesheet" href="css/yourLibrary.css" />`;
+			d.querySelector("head").innerHTML += styleLine;
+		}
+
 		d.querySelector("main").innerHTML = htmlLibrary;
 
 		yourLibrary();

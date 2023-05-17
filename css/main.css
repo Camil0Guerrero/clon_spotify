@@ -1,24 +1,29 @@
 /* Main  */
 main {
-	background-color: #121212;
-	color: #fff;
+	background-color: var(--primary-bg-color);
+	background-image: linear-gradient(var(--bg-color-header) 5%, var(--primary-bg-color) 50% 100%);
+	color: var(--primary-color);
 	position: absolute;
 	width: var(--width-header);
 	left: var(--width-menu);
 	top: 4rem;
-	padding: 24px 16px 0;
+	padding: 0 24px;
+	padding-bottom: var(--height-footer);
 }
 
 .cards > div {
 	background-color: rgba(0, 0, 0, 0.7);
 
-	border-radius: 4px;
-	position: relative;
 	width: 100%;
 	height: var(--item-height);
 
 	transition: all 300ms ease-in-out;
 	border-radius: 10px;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1rem;
 }
 
 .cards > div:hover {
@@ -39,9 +44,7 @@ main {
 }
 
 .content-card {
-	position: absolute;
-	left: 4.5rem;
-	top: 0;
+	position: relative;
 
 	width: 75%;
 	display: flex;
@@ -58,11 +61,6 @@ main {
 	max-width: 80%;
 }
 
-.content-card button {
-	opacity: 0;
-	pointer-events: none;
-}
-
 .cards > div:hover .content-card button {
 	opacity: 1;
 	pointer-events: auto;
@@ -76,7 +74,7 @@ main {
 }
 
 /* Recommendations */
-.recommendations {
+/* .recommendations {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(157px, 1fr));
 	gap: 18px;
@@ -132,4 +130,117 @@ main {
 
 .recommendations > figure:hover button {
 	opacity: 1;
+} */
+
+/* Sections of recommendations  */
+.container-section {
+	height: 270px;
+	overflow: hidden;
+}
+
+.section {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(140px, 200px));
+	justify-content: space-evenly;
+	gap: 18px;
+	grid-auto-rows: 270px;
+}
+
+.section figure {
+	background-color: #242424;
+	border-radius: 10px;
+	padding: 16px;
+}
+
+.section img {
+	border-radius: 50%;
+	width: 100%;
+	aspect-ratio: 1/1;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+	margin-bottom: 10px;
+}
+
+.section h4 {
+	font-size: 1rem;
+	font-weight: 700;
+	margin-block: 0;
+	padding-block-end: 4px;
+}
+
+.section p {
+	font-size: 0.875rem;
+	font-weight: 400;
+	background-color: var(--primary-bg-color);
+	color: #acacac;
+	display: inline;
+}
+
+.songs {
+	width: 100%;
+}
+
+.songs tbody tr {
+	color: #b3b3b3;
+	height: 56px;
+	padding: 0 16px;
+
+	display: grid;
+	grid-template-columns: 50px 4fr minmax(120px, 1fr);
+	align-items: center;
+	justify-content: start;
+	gap: 16px;
+}
+
+.songs img {
+	width: 40px;
+	height: auto;
+	aspect-ratio: 1/1;
+	border-radius: 5px;
+}
+
+/* Transition for the button */
+main button {
+	opacity: 0;
+	display: none;
+	pointer-events: none;
+
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+
+	box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+	transform: translateY(8px);
+
+	transition: all 0.3s ease;
+}
+
+.container-img-figure {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.container-img-figure button {
+	right: 3%;
+	bottom: 30px;
+}
+
+.container-img-figure:hover button {
+	display: initial;
+	opacity: 1;
+	pointer-events: auto;
+	transform: translate(0, 0);
+}
+
+.content-card button {
+	opacity: 0;
+	pointer-events: none;
+	padding: 0;
+}
+
+.content-card button {
+	position: initial;
+	opacity: 0;
+	pointer-events: none;
+	padding: 0;
 }

@@ -1,5 +1,4 @@
 import getData from "../../services/getData.js";
-import getToken from "../../services/getToken.js";
 import { operations } from "../../../assets/data.js";
 
 let d = document,
@@ -10,8 +9,7 @@ let d = document,
 export default async function getDataUser() {
 	const $infoUserBtn = d.querySelector(".information-user button");
 
-	let [access_token] = getToken();
-	let resArtist = await getData(operations.me, access_token);
+	let resArtist = await getData(operations.me);
 
 	let template = `
     <img

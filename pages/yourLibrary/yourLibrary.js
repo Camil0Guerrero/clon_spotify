@@ -1,17 +1,24 @@
 import { operations } from "../../assets/data.js";
-import button from "../../js/pruebas/button/button.js";
 import getData from "../../js/services/getData.js";
-import getToken from "../../js/services/getToken.js";
+import setIcons from "../../js/services/setIcons.js";
 
 let template = "",
 	d = document;
 
 export default async function yourLibrary() {
-	let [access_token] = getToken();
+	let contentForHeader = `
+		<a href="">Playlists</a>
+		<a href="">Artists</a>
+		<a href="">Albums</a>
+		<a href="">Podcasts & Shows </a>
+	`;
 
-	let resPlaylists = await getData(operations.playLists, access_token),
-		[likedSongs, total] = await getData(operations.likedSongs, access_token),
-		resMe = await getData(operations.me, access_token);
+	d.querySelector(".core-content").innerHTML = contentForHeader;
+	d.querySelector(".core-content").classList.remove("none");
+
+	let resPlaylists = await getData(operations.playLists),
+		[likedSongs, total] = await getData(operations.likedSongs),
+		resMe = await getData(operations.me);
 
 	let $container = d.querySelector(".container-playlists");
 
@@ -47,20 +54,8 @@ export default async function yourLibrary() {
 			`;
 		$container.innerHTML = template;
 	});
+
+	setIcons();
 }
 
 // ${el.preview_url ? `<audio src="${el.preview_url}" id="${el.id}"></audio> ` : `<p> Sin Muestra </p>`}
-
-d.addEventListener("click", (e) => {
-	e.preventDefault();
-	if (e.target.matches(".player-button") || e.target.matches(".player-button *")) {
-		if (e.target.classList.contains("start")) {
-			button(e.target.parentNode);
-		} else if (e.target.matches("path")) {
-			let svg = e.target.parentNode;
-			button(svg.parentNode);
-		} else {
-			button(e.target);
-		}
-	}
-});

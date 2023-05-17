@@ -3,6 +3,7 @@ html {
 	font-size: 16px;
 	overflow-x: hidden;
 	user-select: none;
+	background-color: var(--primary-bg-color);
 }
 
 *,
@@ -21,9 +22,11 @@ body {
 :root {
 	--primary-color: #fff;
 	--secondary-color: #1db954;
-	--primary-bg-color: #000;
+	--primary-bg-color: #121212;
+	--bg-color-header: rgb(104, 16, 8);
 	--width-menu: clamp(250px, 20vw, 320px);
 	--width-header: calc(100% - var(--width-menu));
+	--height-footer: 90px;
 }
 
 /* ********** Reset ********** */
@@ -72,6 +75,9 @@ u {
 	vertical-align: baseline;
 }
 
+h2 {
+	margin: 1rem;
+}
 /* ********** Components *************/
 /* button */
 .play {
@@ -97,6 +103,11 @@ u {
 }
 
 /* *** Utilities *** */
+
+.active svg {
+	fill: var(--secondary-color);
+}
+
 .center {
 	display: flex;
 	justify-content: center;
@@ -107,10 +118,4 @@ u {
 	display: none;
 	opacity: 0;
 	pointer-events: none;
-}
-
-.visible {
-	display: initial;
-	opacity: 1;
-	pointer-events: initial;
 }

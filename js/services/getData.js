@@ -1,8 +1,11 @@
 import { operations } from "../../assets/data.js";
+import getToken from "./getToken.js";
 
-async function fetchApi(endpoint, access_token, method = "GET", body) {
+let [access_token] = getToken();
+
+async function fetchApi(endpoint, method = "GET", body) {
 	try {
-		const res = await fetch(`https://api.spotify.com/${endpoint}`, {
+		const res = await fetch(`https://api.spotify.com/v1/${endpoint}`, {
 			headers: {
 				Authorization: `Bearer ${access_token}`,
 				"Content-Type": "application/json",
@@ -15,6 +18,8 @@ async function fetchApi(endpoint, access_token, method = "GET", body) {
 			let artists = await res.json();
 
 			return await artists;
+		} else if (res.status === 401) {
+			window.location.href = "http://127.0.0.1:5500/login.html";
 		} else {
 			throw { status: res.status, statusText: res.statusText };
 		}
@@ -23,63 +28,113 @@ async function fetchApi(endpoint, access_token, method = "GET", body) {
 	}
 }
 
-async function meInformation(access_token) {
-	let information = await fetchApi("v1/me", access_token);
+async function meArtists() {
+	let resArtists = await fetchApi(`me/top/artists?limit=7`),
+		items = resArtists.items;
+
+	return items;
+}
+
+async function meDevices() {
+	let resDevices = await fetchApi(`me/player`),
+		item = resDevices.item,
+		infoDevice = resDevices.device;
+
+	return [resDevices, item, infoDevice];
+}
+
+async function meInformation() {
+	let information = await fetchApi("me");
 	return information;
 }
 
-async function getLikedSongs(access_token) {
-	let songs = await fetchApi("v1/me/tracks/", access_token),
+async function meSongs(limit) {
+	let resSongs = await fetchApi(`me/top/tracks?limit=${limit}`),
+		items = resSongs.items;
+
+	return items;
+}
+
+async function getLikedSongs() {
+	let songs = await fetchApi("me/tracks/"),
 		items = songs.items,
 		total = songs.total;
 
 	return [items, total];
 }
 
-async function getTopTracks(access_token) {
-	let information = await fetchApi("v1/me/top/tracks?limit=5&offset=0", access_token),
+async function getTopTracks() {
+	let information = await fetchApi("me/top/tracks?limit=5&offset=0"),
 		items = information.items;
 	return items;
 }
 
-async function getPlayLists(access_token) {
-	let resPlayList = await fetchApi("v1/me/playlists", access_token),
+async function getPlayLists() {
+	let resPlayList = await fetchApi("me/playlists"),
 		playLists = resPlayList.items;
-
-	console.log(playLists, resPlayList);
 
 	return playLists;
 }
 
-async function searchArtist(query, access_token) {
-	let artists = await fetchApi(`v1/search?q=${query}&type=artist`, access_token),
-		items = artists.artists.items;
-
-	return items;
+async function getRecommendations() {
+	let resRecommendations = await fetchApi("recommendations/available-genre-seeds"),
+		genres = resRecommendations.genres;
+	return genres;
 }
 
-export default async function getData(operation, access_token, query) {
+async function search(query, type, limit) {
+	if (type === "artist") {
+		let artists = await fetchApi(`search?q=${query}&type=${type}&limit=${limit}`),
+			items = artists.artists.items;
+		return items;
+	}
+
+	if (type === "track") {
+		let tracks = await fetchApi(`search?q=${query}&type=${type}&limit=${limit}`),
+			items = tracks.tracks.items;
+		return items;
+	}
+}
+
+export default async function getData(operation, limit = 20, query, type) {
 	switch (operation) {
-		case "artists":
-			const search = await searchArtist(query, access_token);
-			return await search;
+		case operations.search:
+			const resSearch = await search(query, type, limit);
+			return await resSearch;
 
 		case operations.me:
-			const information = await meInformation(access_token);
+			const information = await meInformation();
 			return information;
 
 		case "topTracks":
-			const topTracks = await getTopTracks(access_token);
+			const topTracks = await getTopTracks();
 
 			return topTracks;
 
 		case operations.playLists:
-			const playLists = await getPlayLists(access_token);
+			const playLists = await getPlayLists();
 			return playLists;
 
 		case operations.likedSongs:
-			const songs = await getLikedSongs(access_token);
-			return songs;
+			const likedSongs = await getLikedSongs();
+			return likedSongs;
+
+		case operations.recommendations:
+			const recommendations = await getRecommendations();
+			return recommendations;
+
+		case operations.meArtists:
+			const artists = await meArtists();
+			return artists;
+
+		case operations.meSongs:
+			const resMeSongs = await meSongs(limit);
+			return resMeSongs;
+
+		case operations.meDevices:
+			const devices = await meDevices();
+			return devices;
+
 		default:
 			break;
 	}
