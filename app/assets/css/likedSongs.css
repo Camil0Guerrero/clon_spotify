@@ -1,0 +1,159 @@
+:root {
+	--bgc-primary: rgb(84, 48, 151);
+	--bgc-secondary: rgb(37, 19, 70);
+}
+
+/* Headline */
+.headline {
+	display: flex;
+	gap: 16px;
+	padding: 2rem;
+	height: 276px;
+	margin-top: 1rem;
+}
+
+.headline img {
+	width: 192px;
+	height: 192px;
+	-webkit-box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* Title and information of the section */
+.information-songs {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.headline h1 {
+	font-size: 5vw;
+	font-weight: 700;
+	margin: 0.08rem 0px 0.12rem;
+}
+
+.headline span {
+	font-size: 0.875rem;
+	font-weight: 700;
+}
+
+.headline .user-information {
+	height: 24px;
+}
+
+.headline .user-information a {
+	font-size: 0.875rem;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+}
+
+.headline .user-information img {
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+}
+
+/* overwrite the background color */
+.header {
+	background-color: var(--bgc-primary);
+}
+
+/* background gradient  */
+main {
+	background-image: linear-gradient(var(--bgc-primary) -30%, var(--bgc-secondary));
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* Button */
+.btn-start {
+	padding: 24px 16px;
+}
+
+.btn-start button {
+	opacity: 1;
+	position: initial;
+	height: 56px;
+	width: 56px;
+}
+
+/* Table */
+/* General styles */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(120deg, transparent, #121212 90%);
+}
+
+table img {
+	width: 40px;
+	height: auto;
+	aspect-ratio: 1/1;
+	border-radius: 5px;
+}
+
+/* styles so that it stays just below our header */
+table thead {
+	color: #fff;
+	position: sticky;
+	top: 60px;
+	background-color: #121212;
+}
+
+table thead tr,
+table tbody tr {
+	color: #b3b3b3;
+	height: 56px;
+	padding: 0 16px;
+
+	display: grid;
+	grid-template-columns: 50px 4fr 3fr repeat(2, minmax(120px, 1fr));
+	align-items: center;
+	justify-content: start;
+	gap: 16px;
+}
+
+table thead th {
+	text-align: start;
+	font-size: 0.875rem;
+	font-weight: 700;
+}
+
+table thead tr {
+	height: 36px;
+}
+
+tbody a {
+	text-decoration: none;
+	color: inherit;
+}
+
+tbody a p {
+	color: #fff;
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+tbody a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+table td:nth-child(2) {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 8px;
+}
+
+table td:nth-child(3),
+table td:nth-child(4),
+table td:nth-child(5) {
+	font-size: 0.875rem;
+	font-weight: 400;
+}
