@@ -1,0 +1,166 @@
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+	overflow-x: hidden;
+	user-select: none;
+	background-color: var(--primary-bg-color);
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: var(--font-family);
+	line-height: 1.6;
+}
+
+/* ********** Custom Properties ********** */
+:root {
+	--primary-color: #fff;
+	--secondary-color: #1db954;
+	--primary-bg-color: #121212;
+	--bg-color-header: rgb(104, 16, 8);
+	--width-menu: clamp(250px, 20vw, 320px);
+	--width-header: calc(100% - var(--width-menu));
+	--height-footer: 90px;
+	--font-family: CircularSp, Comic, Arial;
+}
+
+/* ********** Reset ********** */
+a,
+article,
+aside,
+audio,
+div,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+header,
+html,
+img,
+li,
+menu,
+nav,
+p,
+span,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+u {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+h2 {
+	margin: 1rem;
+}
+
+/* ********** Components *************/
+/* button */
+.play {
+	background-color: var(--secondary-color);
+	border-radius: 50%;
+	border: none;
+	height: 3rem;
+	width: 3rem;
+}
+
+.play:hover {
+	transform: scale(1.04);
+}
+
+.play svg {
+	width: 24px;
+	height: 24px;
+}
+
+.play .pause {
+	display: none;
+}
+
+/* *** Utilities *** */
+
+/* Add color to options that are active */
+.active svg {
+	fill: var(--secondary-color);
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.none {
+	display: none;
+	opacity: 0;
+	pointer-events: none;
+}
+
+/* Site */
+/* Paragraph where the device is shown */
+.show-device {
+	position: fixed;
+	z-index: 9;
+	bottom: calc(var(--height-footer) - 3vh);
+	right: 5vw;
+}
+
+.show-device span {
+	color: var(--primary-color);
+}
+
+.show-device p {
+	display: inline;
+	color: var(--secondary-color);
+}
+
+/* Efecto al estar cargando */
+/* Effect when loading */
+@keyframes spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.spinner {
+	width: 5%;
+	height: 5%;
+	aspect-ratio: 1/1;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+
+	border: 0.5vw solid #888;
+	/* border-left-color: #09f; */
+	border-top-color: var(--secondary-color);
+
+	animation: spinner 1s ease-out infinite;
+}
+
+/* Message */
+.message {
+	border-radius: 10px;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	font-weight: 700;
+}

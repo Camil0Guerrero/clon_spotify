@@ -1,0 +1,134 @@
+/*** Menu ***/
+/* Nav of the left */
+.menu {
+	background-color: var(--primary-bg-color);
+	display: flex;
+	flex-direction: column;
+	width: var(--width-menu);
+	min-width: 250px;
+	position: fixed;
+	padding: 8px;
+	padding-top: 24px;
+}
+
+.logo {
+	margin-left: -8px;
+	margin-right: -8px;
+	border: 0;
+	transition: transform 300ms ease-in-out;
+	margin-bottom: 24px;
+	padding: 0 24px;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+.logo:hover > svg {
+	transform: scale(1.1);
+}
+
+.menu a svg {
+	height: 40px;
+}
+
+.menu a {
+	color: var(--primary-color);
+	display: flex;
+	text-decoration: none;
+	gap: 16px;
+	align-items: center;
+	padding: 0 16px;
+	transition: color 0.3s ease-in-out;
+	height: 40px;
+}
+
+/* Home, Search, Your Library */
+.pages a svg {
+	width: 24px;
+	height: 24px;
+}
+
+/* Create playlist and liked songs */
+.options {
+	margin-top: 24px;
+}
+
+.pages,
+.options {
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+/* Style for the separator */
+.menu hr {
+	width: 70%;
+	border: none;
+	background-image: radial-gradient(
+		var(--secondary-color) 68%,
+		var(--primary-color)
+	);
+	height: 1px;
+	min-height: 1px;
+	border-radius: 1px;
+}
+
+/* Define the background of our image */
+.icon-create-playlist {
+	background-color: var(--primary-color);
+	border-radius: 2px;
+	width: 24px;
+	height: 24px;
+}
+
+.icon-create-playlist svg {
+	fill: #000;
+}
+
+.icon-liked-songs {
+	background-image: linear-gradient(135deg, #450af5, #c4efd9);
+	width: 24px;
+	height: 24px;
+}
+
+.active .icon-liked-songs {
+	background-image: none;
+}
+
+/* List of playlists */
+.playlists {
+	background-color: var(--primary-bg-color);
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 600px;
+	padding: 8px;
+	font-weight: 400;
+	font-size: 1rem;
+	overflow-y: scroll;
+	padding-bottom: var(--height-footer);
+}
+
+.playlists a {
+	color: var(--primary-color);
+	padding: 0.25rem;
+	cursor: default;
+	text-decoration: none;
+	font-size: 1rem;
+	margin: 0;
+
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	align-items: center;
+}
+
+.playlists img {
+	border-radius: 50%;
+	width: 2rem;
+	height: 2rem;
+}
+
+.playlists p {
+	margin: 0;
+}

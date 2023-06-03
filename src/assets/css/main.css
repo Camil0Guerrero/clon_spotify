@@ -1,0 +1,184 @@
+/* Main  */
+main {
+	background-color: var(--primary-bg-color);
+	background-image: linear-gradient(
+		var(--bg-color-header) 5%,
+		var(--primary-bg-color) 50% 100%
+	);
+	color: var(--primary-color);
+	position: absolute;
+	width: var(--width-header);
+	left: var(--width-menu);
+	top: 4rem;
+	padding: 0 24px;
+	padding-bottom: var(--height-footer);
+}
+
+/* subtitles generics */
+main h2 {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.title-main {
+	font-size: 2rem;
+}
+
+/* initial letters of recommendation */
+.cards > div {
+	background-color: rgba(0, 0, 0, 0.7);
+
+	width: 100%;
+	height: var(--item-height);
+
+	transition: all 300ms ease-in-out;
+	border-radius: 10px;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1rem;
+}
+
+.cards > div:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.cards > div img {
+	height: 100%;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+/* Recommendation figures for artists and songs */
+.recently-heard {
+	--min-column-width: 270px;
+	--item-height: 64px;
+	--column-gap: 24px;
+	--row-gap: 12px;
+}
+
+/* Container for the play button */
+.content-card {
+	position: relative;
+
+	width: 75%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.content-card p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: bold;
+	white-space: nowrap;
+	max-width: 80%;
+}
+
+/* when the user passes over the recommendation they will see the button */
+.cards > div:hover .content-card button {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+/* Grid responsive */
+.recently-heard .cards {
+	display: grid;
+	grid-template: auto/repeat(
+		auto-fill,
+		minmax(max(var(--min-column-width), 25%), 1fr)
+	);
+	gap: var(--row-gap) var(--column-gap);
+}
+
+/* Sections of recommendations  */
+/* This container will limit what is seen on the screen */
+.container-section {
+	height: 270px;
+	overflow: hidden;
+}
+
+/* Define how our elements are coupled taking into account the defined height */
+.section {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(140px, 200px));
+	justify-content: space-evenly;
+	gap: 18px;
+	grid-auto-rows: 270px;
+}
+
+/* recommendation letter styles */
+.section figure {
+	background-color: #242424;
+	border-radius: 10px;
+	padding: 16px;
+}
+
+.section img,
+.default-image-artist {
+	border-radius: 50%;
+	width: 100%;
+	aspect-ratio: 1/1;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+	margin-bottom: 10px;
+}
+
+.section h4 {
+	font-size: 1rem;
+	font-weight: 700;
+	margin-block: 0;
+	padding-block-end: 4px;
+}
+
+.section p {
+	font-size: 0.875rem;
+	font-weight: 400;
+	background-color: var(--primary-bg-color);
+	color: #acacac;
+	display: inline;
+}
+
+/* Table to display search results */
+
+/* Transition for the button */
+main button {
+	opacity: 0;
+	display: none;
+	pointer-events: none;
+
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+
+	box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+	transform: translateY(8px);
+
+	transition: all 0.3s ease;
+}
+
+/* Figures to show the playlists in the library */
+.container-img-figure {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.container-img-figure button {
+	right: 3%;
+	bottom: 30px;
+}
+
+.container-img-figure:hover button {
+	display: initial;
+	opacity: 1;
+	pointer-events: auto;
+	transform: translate(0, 0);
+}
+
+.content-card button {
+	position: initial;
+	opacity: 0;
+	pointer-events: none;
+	padding: 0;
+}
